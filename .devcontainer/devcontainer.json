@@ -5,6 +5,9 @@
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -20,10 +23,8 @@
 				"editor.wordWrapColumn": 9999
 			},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker",
 				"GitHub.copilot-chat",
-				"GitHub.copilot",
-				"GitHub.copilot-labs"
+				"GitHub.copilot"
 			]
 		}
 	},

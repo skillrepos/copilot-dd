@@ -427,32 +427,39 @@ create a function to validate any global phone number using a regular expression
 
 ![Automatic doc of function](./images/cdd63.png?raw=true "Automatic doc of function")  
 
-4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
+4. Now let's see how Copilot can generate some data and mappings for us automatically. Open the Copilot chat window (**CMD+I**) and enter the following prompt.
 ```
 create a mapping of states to area codes
 the key is the state abbreviation
 the value is an array of area codes
 ```
-5. After running this, Copilot will generate the start of a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
-
-![Automatic gen of data](./images/cdd65.png?raw=true "Automatic gen of data") 
+5. After running this, Copilot will generate the start of a list as shown below. We're going to put this in a separate file.  Click on the downward arrow on the right-hand side of the **Discard** button and select **Discard to New File**.
+   
+![Automatic gen of data](./images/cdd85.png?raw=true "Automatic gen of data") 
 
 6. Notice that the example mapping was only for the first few states. We want to get the remaining mappings for the other states.
 
-![Partial list of mappings](./images/cdd66.png?raw=true "Partial list of mappings") 
+![Partial list of mappings](./images/cdd86.png?raw=true "Partial list of mappings") 
 
-7. Let's craft a prompt to complete the sequence. Enter the following in the main Copilot Chat entry box and then execute it.
+7. Let's craft a prompt to complete the sequence. With the file open with the partial mapping, switch to the main Copilot Chat entry box (not the prompt window) and then execute the following prompt.
 
 ```
-create a mapping of the remaining states to area codes 
-the key is the state abbreviation
-the value is an array of area codes
+add more mappings
 ```
-![Completing the mappings](./images/cdd67.png?raw=true "Completing the mappings") 
 
-8. From the generated text in the chat, you can copy the mappings and add them into the code file.
+8. At this point, depending on your Copilot settings, you may hit an error because a response matched public code and was blocked. 
    
-![Copying remaining mappings](./images/cdd69.png?raw=true "Copying remaining mappings") 
+![Blocked mappings](./images/cdd87.png?raw=true "Blocked mappings") 
+
+9. We need to rephrase our prompt to get additional mappings. If you hit the error in the last step, try the prompt below:
+
+```
+create a mapping for all remaining states with one state and max 5 area codes per line
+```
+ 
+![Additional mappings](./images/cdd88.png?raw=true "Additional mappings") 
+
+10. You should then be able to copy/insert those mappings into the existing file and save it as desired.
 
    
 <p align="center">

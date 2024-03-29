@@ -234,7 +234,7 @@ code dev.sql
 ```
 -- define a select statement to get all students enrolled in a course
 ```
-3. Go ahead and save this file as part of the project.  Click on the *X* next to the file's name in it's tab and select to *Save* it.
+3. Go ahead and save this file as part of the project.  You can do this from the "3-line" menu under File->Save, or just click on the X next to the file's name in it's tab and select to Save it.
 
 ![Save sql file](./images/cdd96.png?raw=true "Save sql file") 
    

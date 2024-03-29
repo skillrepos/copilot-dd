@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 3.2 - 02/27/24
+## Revision 3.3 - 03/28/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -43,33 +43,36 @@
 function parseURL(url) {
 ```
 
-9. Just hit Tab to accept it and Enter again. After that Copilot may or may not offer a suggestion.  If it does, great - you can just hit Tab and accept it.  If not, it may be necessary to further "nudge" Copilot by giving more prompts. Only if you're not getting responses from Copilot, hit return and type the comment below to nudge Copilot.
+9. Just hit Tab to accept it and Enter again. Pause. After that Copilot may or may not offer a suggestion.  If it does, great - you can just hit Tab and accept it.  If not, it may be necessary to further "nudge" Copilot by giving more prompts. Only if you're not getting responses from Copilot, hit return and type the comment below to nudge Copilot.
 
 ```
 // parse url
 ```
 ![nudge comment](./images/cdd3.png?raw=true "nudge comment")   
 
-10. Only if needed, hit return and Copilot should start generating suggestions again. You can just hit tab to accept each line and then return to get the next part of the code until the function is complete. You may get some blank lines along the way - just hit return until you get to the end of a function. (You will be at the end when the indentation is done.  Also Copilot may start to suggest another function in comments like // test...)
+10. Only if needed, hit return and Copilot should start generating suggestions again. Pause after each return to give Copilot a chance to suggest code. Then you can just hit tab to accept each line and then return to get the next part of the code until the function is complete. You may get some blank lines along the way or for some lines you might need to hit Tab twice to accept the code if it is indented more. But just hit return until you get to the end of a function. (You will be at the end when the indentation is done.  Also Copilot may start to suggest another function in comments like // test...)
 
-11. Suppose you're not happy with that suggestion. Copilot can provide other options for the code. To see those, make sure you are in the editor for the file, highlight/select the existing code and hit **Ctrl + Enter**. A second window will open up with other suggestions.
-Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from.
-You can scan through these and then pick a different one if you want by clicking on the "Accept Solution" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may want to delete the other code first.
+11. Suppose you're not happy with that suggestion. Copilot can provide other options for the code. To see those, make sure you are in the editor for the file, then delete all but the first line of the function **and** put the cursor at the end of the first line.
+
+![reset for altenate choices](./images/cdd105.png?raw=true "reset for alternate choices")   
+   
+12. Hit **Ctrl + Enter**. A second window will open up with other suggestions.
+Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from. These will be of varying quality and completeness. You can scan through these and then pick one if suitable by clicking on the "Accept Solution" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may need to do some minor editing afterwards.
 
 ![alternative suggestions](./images/cdd4.png?raw=true "alternative suggestions")   
 
-12. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
+13. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
 Type the following in the empty file. (There are no parentheses after the *splitURLandReturnComponents* text.)  Do not hit tab or return yet.
 
 ```
 function splitURLandReturnComponents
 ```
 
-13.  With this function name, Copilot should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will not how many options there are (probably 2 or 3) and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions.
+14.  With this function name, Copilot should suggest a full function definition - in fact it may suggest several.  To see the options, hover over the first line and a small window should appear. This window will not how many options there are (probably 2 or 3) and provide "<" and ">" links to toggle between them.  Click on the "<" and ">" buttons to see the differences in the available suggestions.
 
 ![alternative suggestions inline](./images/cdd5b.png?raw=true "alternative suggestions inline")   
 
-14. When you find an alternative you like, go ahead and tab to select it.
+15. When you find an alternative you like, go ahead and tab to select it.
 
  <p align="center">
 **[END OF LAB]**
@@ -85,11 +88,13 @@ code prime.py
 
 2. Start typing a function definition as below
 ```
-def is_prime(n
+def is_prime(n):
 ```
-3. Pick one of the offered suggestions and hit Tab.
+3. Leave the cursor at the end of the line.
 
-4. Highlight the text and hit **Ctrl+Enter** to see options
+![starting point](./images/cdd104.png?raw=true "starting point") 
+
+4. Hit **Ctrl+Enter** to see options
 
 5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Solution**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Solution**.
 
@@ -537,3 +542,20 @@ gh copilot suggest "install terraform"
 **THANKS!**
 </p>
  
+Troubleshooting
+
+If you happen to see an issue saying that **command 'github.copilot.generate' not found**, follow the steps below to get back to a previous version of Copilot.
+
+![Copilot generate error](./images/copilot-error1.png?raw=true "Copilot generate error")
+
+On the right-hand side, click the Extensions icon and then in the search bar, type "Copilot".
+
+![Copilot find extension](./images/copilot-error2.png?raw=true "Copilot find extension")
+
+Select the entry for the **GitHub Copilot** extension, then click on the **down arrow on the right of the Uninstall button**. In the menu that comes up next, click on **Install Another Version...***.
+
+![Copilot revert to previous version](./images/copilot-error3.png?raw=true "Copilot revert to previous version")
+
+Select a previous version from the drop-down list, such as v1.175.0.
+
+After this, the previous version will be automatically installed. Finally, click on the **Reload Window** button to update the codespace to use that previous version.

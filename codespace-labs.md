@@ -96,7 +96,7 @@ def is_prime(n):
 
 4. Hit **Ctrl+Enter** to see options
 
-5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Solution**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Solution**.
+5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Suggestion**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Suggestion**.
 
 ![alternative suggestions](./images/cdd34b.png?raw=true "alternative suggestions") 
 

@@ -22,10 +22,8 @@
 				"editor.wordWrapColumn": 9999
 			},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker",
 				"GitHub.copilot-chat",
-				"GitHub.copilot",
-				"GitHub.copilot-labs"
+				"GitHub.copilot@1.175.0"
 			]
 		}
 	},

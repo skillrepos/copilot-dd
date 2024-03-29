@@ -57,7 +57,7 @@ function parseURL(url) {
 ![reset for altenate choices](./images/cdd105.png?raw=true "reset for alternate choices")   
    
 12. Hit **Ctrl + Enter**. A second window will open up with other suggestions.
-Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from. These will be of varying quality and completeness. You can scan through these and then pick one if suitable by clicking on the "Accept Suggestion" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may need to do some minor editing afterwards.
+Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from. These will be of varying quality and completeness. You can scan through these and then pick one if suitable by clicking on the **Accept suggestion #** button under the alternative suggestion.  Note that this will add the code to the existing set, so you may need to do some minor editing afterwards.
 
 ![alternative suggestions](./images/cdd106.png?raw=true "alternative suggestions")   
 
@@ -96,7 +96,7 @@ def is_prime(n):
 
 4. Hit **Ctrl+Enter** to see options
 
-5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept Suggestion**. If there's not one that's longer/more complex, just pick an alternative one and **Accept Suggestion**.
+5. Pick one of the options that is longer and/or more complex (if there is one) and **Accept suggestion #**. If there's not one that's longer/more complex, just pick an alternative one and **Accept suggestion #**.
 
 ![alternative suggestions](./images/cdd34b.png?raw=true "alternative suggestions") 
 

@@ -57,9 +57,9 @@ function parseURL(url) {
 ![reset for altenate choices](./images/cdd105.png?raw=true "reset for alternate choices")   
    
 12. Hit **Ctrl + Enter**. A second window will open up with other suggestions.
-Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from. These will be of varying quality and completeness. You can scan through these and then pick one if suitable by clicking on the "Accept Solution" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may need to do some minor editing afterwards.
+Be patient - it takes a bit of time for Copilot to generate alternative suggestions. After a moment though, you will have up to 10 alternatives to pick from. These will be of varying quality and completeness. You can scan through these and then pick one if suitable by clicking on the "Accept Suggestion" button under the alternative suggestion.  Note that this will add the code to the existing set, so you may need to do some minor editing afterwards.
 
-![alternative suggestions](./images/cdd4.png?raw=true "alternative suggestions")   
+![alternative suggestions](./images/cdd106.png?raw=true "alternative suggestions")   
 
 13. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
 Type the following in the empty file. (There are no parentheses after the *splitURLandReturnComponents* text.)  Do not hit tab or return yet.

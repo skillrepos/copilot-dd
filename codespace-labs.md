@@ -297,10 +297,10 @@ use instructor_id as the input parameter
 13. Finally, let's see Copilot optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
 
 ```
-select * from courses.registration where year(registration_date) = 2023 and month(registration_date) = 9
+select * from courses.registration where year(registration_date) = 2023 and month(registration_date) = 9;
 ```
 
-14. Ask Copilot to optimize the previous query. You can do this via highlighting the query, using the **CMD+I** shortcut and entering "/optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
+14. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), using the **CMD+I** shortcut and entering "/optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
 
 ```
 /optimize

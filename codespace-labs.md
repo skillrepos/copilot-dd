@@ -123,7 +123,7 @@ def is_prime(n):
 
 11. After a few moments, it will propose a fix that you can just accept (via the Accept button). You can also click on the *Show Changes* icon to see before/after for the proposed changes.
 
-![Fixing with Copilot](./images/cdd107.png?raw=true "Fixing with Copilot")       
+![Fixing with Copilot](./images/cdd107a.png?raw=true "Fixing with Copilot")       
 
 12. (Optional) If you'd like, you can go back and make the error again, highlight the code, and then use the /fix command in the chat window to get the same results.
 

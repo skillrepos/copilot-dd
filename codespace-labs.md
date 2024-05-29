@@ -140,7 +140,7 @@ def is_prime(n):
 ![Interactively telling Copilot to explain code](./images/cdd40b.png?raw=true "Interactively telling Copilot to explain code")
 
 
-2. Tell Copilot to explain the code by typing the command below in the dialog. (Note, the actual word may not show up after you type.) Hit Enter. Then, you should see the output in the chat window.
+2. Tell Copilot to explain the code by typing the command below in the dialog. Hit Enter. Then, you should see the output in the chat window.
 
 ```
 /explain
@@ -165,15 +165,13 @@ def is_prime(n):
 
 6. Finally, let's see how to use the doc feature to automatically document our code. Highlight the actual code.
 
-7. Now, enter **Cmd+I** and enter the **/doc** command. After a few moments, Copilot should generate some documentation for the code. Do not Accept or Discard yet.
+7. Now, enter **Cmd+I** and enter the **/doc** command. After a few moments, Copilot should generate some documentation for the code. You can go ahead and *Accept* the changes.
 
-![Generated doc for the code](./images/cdd44b.png?raw=true "Generated doc for the code")  
+![Generated doc for the code](./images/cdd44d.png?raw=true "Generated doc for the code")  
 
-8. Let's see what other doc could be generated. Click on the circular arrow button next to Discard at the bottom of the dialog and click on it to regenerate another possible doc.
+8. While this is useful documentation for the start of the function, we'd like to have more extensive comments in the function body. So,let's get Copilot's help with that. Bring up the chat dialog again with **Cmd+I** and enter the text "verbosely comment this code". After Copilot completes its suggestions, if you're happy with them, you can just click *Accept*. 
 
-![Regenerating doc](./images/cdd45b.png?raw=true "Regenerating doc")  
-
-9. Once you find a doc example you like, go ahead and click **Accept**.
+![Regenerating doc](./images/cdd110.png?raw=true "Regenerating doc")  
 
 <p align="center">
 **[END OF LAB]**

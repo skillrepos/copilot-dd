@@ -193,24 +193,33 @@ def is_prime(n):
 ```
 def test_is_prime():
 ```
-![generating tests via comment](./images/cdd46.png?raw=true "generating tests via comment") 
+![generating tests via comment](./images/cdd46a.png?raw=true "generating tests via comment") 
 
-4. Let's try a slightly different way of generating tests.  First, highlight and delete any parts of the current test function, including comments.
+4. What if we didn't know how to test the code at all? Let's ask Copilot. Highlight the *is_prime()* function.
 
-5. Let's have chat generate the tests.  Go ahead and highlight/delete any existing ones and the test function in the prime.py file.
+![selecting code](./images/cdd111.png?raw=true "selecting code") 
 
-6. Select the set of code for *is_prime*. Then Go to chat and tell it to generate tests
+5. Now, switch to the chat interface and ask Copilot using the following prompt:
+
+```
+#selection: How do I test this code?
+```
+![prompting on how to test](./images/cdd112.png?raw=true "prompting on how to test") 
+
+6. After entering this, you should see an explanation of how to test the code along with suggested testing code. If you expand the reference in the chat output, you can see that it only used the selected lines.
+
+![testing explanation](./images/cdd113.png?raw=true "testing explanation") 
+
+7. Let's see what the shortcut command would do. In the chat dialog enter "/tests" and then Enter. Note that the prompt will be replaced with "@workspace /tests" and then you'll see similar outputs.
 
 ```
 /tests
 ```
-![Tests-generated tests](./images/cdd49.png?raw=true "Tests-generated tests") 
+![shortcut test command] (./images/cdd114.png?raw=true "shortcut test command")
 
-7. We could put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file".  Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
+8. We could put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file".  Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
 
-![Insert tests into new file](./images/cdd50.png?raw=true "Insert tests into new file") 
-
-![Saved generated unit tests file](./images/cdd50b-4.png?raw=true "Saved generated unit tests file") 
+![Insert tests into new file](./images/cdd115.png?raw=true "Insert tests into new file") 
 
 
 <p align="center">

@@ -385,7 +385,7 @@ add label type: front-end
 ```
 
 3. After a few moments, you should see it respond with the code. You can just Accept this.
-![Kubernetes manifest](./images/cdd57.png?raw=true "Kubernetes manifest")
+![Kubernetes manifest](./images/cdd120.png?raw=true "Kubernetes manifest")
 
 4. Suppose we don't know how to execute this code. Let's ask Copilot. Highlight the generated YAML in the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface.
 
@@ -395,7 +395,7 @@ How do I execute this - short version?
 
 5. Copilot should respond with something like the following:
 
-![How to execute deployment](./images/cdd58.png?raw=true "How to execute deployment")
+![How to execute deployment](./images/cdd121.png?raw=true "How to execute deployment")
 
 
 6. While we're in the Chat interface, let's ask it for the latest K8s version. Put the following into the dialog.
@@ -406,7 +406,7 @@ what is the latest Kubernetes version?
 
 7. Notice that it identifies the latest version as 1.22 as of September 2021. This highlights the out-of-date issue with the LLM.
 
-![Answer to latest K8s version](./images/cdd59.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cdd122.png?raw=true "Answer to latest K8s version")
 
 
 8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
@@ -414,21 +414,23 @@ what is the latest Kubernetes version?
 ```
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 ```
+9. Notice that it tells us first we would need to make sure we have PIP installed. If you click in that particular chat output window, in the pop-up set of icons, the third icon from the left will allow you to directly insert that command into the terminal. For demo purposes, go ahead and click on that icon and insert the command into the terminal. You can then run it if you want, but it's not necessary.
 
-9. Click in chat output and paste to new file via clicking on the "..." menu option.
+![Insert into terminal](./images/cdd123.png?raw=true "Insert into terminal")
 
-![Add code to new file](./images/cdd60.png?raw=true "Add code to new file")
+  
+10. Now, skip down to the actual code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
+
+![Add code to new file](./images/cdd124.png?raw=true "Add code to new file")
 
 
-10. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go.
+11. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go. Then, look in the separate chat output and you should see the equivalent Go code available.
 
 ```
 translate to Go 
 ```
+![Go translation](./images/cdd125.png?raw=true "Go translation")
 
-11. If you look at the output from the Chat interface, you should now have the equivalent Go code available.
-
-![Go translation](./images/cdd61.png?raw=true "Go translation")
 
 <p align="center">
 **[END OF LAB]**

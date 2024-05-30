@@ -446,17 +446,17 @@ translate to Go
 code contact.js
 ```
 
-2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface.
+2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface and just *Accept* the results.
 ```
 create a function to validate any global phone number using a regular expression
 ```
-![Regex function to validate phone #](./images/cdd62.png?raw=true "regex function to validate phone #")
+![Regex function to validate phone #](./images/cdd127.png?raw=true "regex function to validate phone #")
 
 3. Let's tell it to document the function by highlighting the code, invoking **CMD+I** and **/doc**.  You can just Accept the results.
 
-![Automatic doc of function](./images/cdd63.png?raw=true "Automatic doc of function")  
+![Automatic doc of function](./images/cdd128.png?raw=true "Automatic doc of function")  
 
-4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main Chat text entry area.
+4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main/separate chat text entry area.
 ```
 create a mapping of states to area codes
 the key is the state abbreviation

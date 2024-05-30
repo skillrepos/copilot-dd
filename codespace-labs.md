@@ -518,44 +518,54 @@ the key is the state abbreviation and the value
 
 ![insert into terminal](./images/cdd136.png?raw=true "insert into terminal")
 
-5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. You can then copy the message and paste it into a *git commit* command in the terminal to complete the update.
+5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. You can then copy the message and paste it into a *git commit* command in the terminal. **If you started your codespace from a fork, you can hit return to complete the commit if you want. This is optional. If you started your codespace via the one-click button, you will not have permissions to commit.**
 ```
 git commit -m "<contents of generated commit message from Copilot goes here>"
 ```
 ![commit with generated message](./images/cdd137.png?raw=true "commit with generated message")
 
-6. Now, let's use the **@workspace** agent to help identify where we use certain things in our code. **Click on one of the non-sql files and make sure it is the currently selected/active file in the editor.** In the separate *chat* interface , enter the following prompt:
+6. Now, let's switch gears and use the **@workspace** agent to help identify where we use certain things in our code. With the *explore.go* file still active in your editor, in the separate *chat* interface , enter the following prompt:
 
 ```
-where do I use sql?
+Which files are using SQL?
 ```
 
-5. After executing this, you'll have some suggested information on how to test the code in your workspace.
+7. After executing this, you'll likely have some suggested information on how to search for files that use SQL in your project with search functionality for Visual Studio Code.
+   
+![initial query response](./images/cdd138.png?raw=true "initial query response")   
 
-6. Finally, let's work with the Copilot command line interface. The codespace already has the GitHub CLI installed, so we just need to install the Copilot extension and authenticate. Enter the following in the terminal.
+8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* agent.
+```
+@workspace Which files are using SQL?
+```
+
+9. After executing this, you should see Copilot assessing all of the files in teh workspace and then returning a more specific (and expected) answer.
+![more specific response](./images/cdd139.png?raw=true "more specific response")   
+    
+10. Finally, let's work with the Copilot command line interface. The codespace already has the GitHub CLI installed, so we just need to install the Copilot extension and authenticate. Enter the following in the terminal.
 
 ```
 gh extension install github/gh-copilot
 ```
 
-7. After this, you can invoke the copilot command line to see the options available.
+11. After this, you can invoke the copilot command line to see the options available.
 
 ```
 gh copilot
 ```
 ![Copilot CLI help](./images/cdd94.png?raw=true "Copilot CLI help")
 
-8. To authenticate, use the command below in the terminal.
+12. To authenticate, use the command below in the terminal.
 
 ```
 gh auth login --web
 ```
 
-9. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize" button on the next screen after this to complete the process.
+13. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize" button on the next screen after this to complete the process.
 
 ![Copilot CLI auth](./images/cdd95.png?raw=true "Copilot CLI auth")
 
-10. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.
+14. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.
 
 ```
 gh copilot explain "ps -aux"

@@ -390,7 +390,7 @@ add label type: front-end
 4. Suppose we don't know how to execute this code. Let's ask Copilot. Highlight the generated YAML in the deployment.yaml file.  Then go to the larger Chat interface and ask it. Put the following in the Chat interface.
 
 ```
-How do I execute this - short version?
+How do I execute this?
 ```
 
 5. Copilot should respond with something like the following:

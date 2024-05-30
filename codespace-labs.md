@@ -458,13 +458,13 @@ create a function to validate any global phone number using a regular expression
 
 4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main/separate chat text entry area.
 ```
-create a mapping of states to area codes
-the key is the state abbreviation
-the value is an array of area codes with max 5
+create a mapping of states to area codes where
+the key is the state abbreviation and the value
+ is an array of area codes with max 5
 ```
 5. After running this, Copilot will generate the start of a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
 
-![Automatic gen of data](./images/cdd102.png?raw=true "Automatic gen of data") 
+![Automatic gen of data](./images/cdd129.png?raw=true "Automatic gen of data") 
 
 6. Notice that the example mapping was only for the first few states. We want to get the remaining mappings for the other states.
 

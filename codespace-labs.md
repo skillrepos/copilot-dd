@@ -494,26 +494,40 @@ the key is the state abbreviation and the value
 
 **Purpose: In this lab, we'll get some practice using GitHub Copilot agents and the Copilot CLI.**
 
-1. Let's go ahead and invoke the **@terminal** agent to ask a common question about how to commit code changes. Go to the **chat** interface and enter the prompt below. Afterwards, the commands to do the commit should show up in the chat window as shown below.
+1. Now let's see how Copilot can help with tasks using agents. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
+   
+- Select the *explore.go* file
+- Click on the *three-line menu* in the top left.
+- From the menu that comes up, select *File* and then select *Save* (or use the shortcut).
+
+![Save file](./images/cdd133.png?raw=true "Save file")
+
+2. Now, let's invoke the **@terminal** agent to ask a common question about how to stage your code changes. Go to the *chat* interface and enter the prompt below. Afterwards, the command to do the staging should show up in the chat output.
 
 ```
-@terminal how do I commit my code changes?
+@terminal how do I stage explore.go?
 ```
-![querying for commit](./images/cdd89.png?raw=true "query for commit")
-![query output](./images/cdd90.png?raw=true "query output") 
+![query output](./images/cdd134.png?raw=true "query output") 
 
-2. Hover over the window with the commands in it, and then click on the icon that pops up for the terminal. Click on that to insert it into the terminal. You don't have to commit the changes right now.  
+3. Hover over the window with the commands in it, and then click on the icon that pops up for the terminal. Click on that to insert the command into the terminal. Then hit return.
 
-![insert into terminal](./images/cdd91.png?raw=true "insert into terminal")
+![insert into terminal](./images/cdd135.png?raw=true "insert into terminal")
 
-3. Now let's see how Copilot can help with generating commit messages. Click on the source control extension icon in the left sidebar. If you don't have any files showing up as eligible for commit, try closing some of the open files you have in the codespace by clicking on the "x" in the tab. With some files showing up to commit, click on the *sparkle* icon (in the upper right of the commit message box) to have Copilot generate a commit message. If you don't like the message it generates, you can click on the same icon again to see another option. You can commit the changes if you want, but its not necessary.
 
-![copilot generating commit messages](./images/cdd92.png?raw=true "copilot generating commit messages")
+4. Now let's commit our change through the interface and have Copilot suggest a commit message for us. Click on the source control icon in the sidebar (#1 in the figure below). Your *explore.go* file should be selected. In the box titled "Message" above the *Commit bar*, click on the *sparkle icon* at the far right side (#2 in the figure below).
 
-4. Now, let's use the **@workspace** agent to help identify how we can test our code. In the **chat** text area, enter the following prompt:
+![insert into terminal](./images/cdd136.png?raw=true "insert into terminal")
+
+5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. You can then copy the message and paste it into a *git commit* command in the terminal to complete the update.
+```
+git commit -m "<contents of generated commit message from Copilot goes here>"
+```
+![commit with generated message](./images/cdd137.png?raw=true "commit with generated message")
+
+6. Now, let's use the **@workspace** agent to help identify where we use certain things in our code. **Click on one of the non-sql files and make sure it is the currently selected/active file in the editor.** In the separate *chat* interface , enter the following prompt:
 
 ```
-@workspace what do I use to test my prime number code?
+where do I use sql?
 ```
 
 5. After executing this, you'll have some suggested information on how to test the code in your workspace.
@@ -555,20 +569,4 @@ gh copilot suggest "install terraform"
 **THANKS!**
 </p>
  
-Troubleshooting
 
-If you happen to see an issue saying that **command 'github.copilot.generate' not found**, follow the steps below to get back to a previous version of Copilot.
-
-![Copilot generate error](./images/copilot-error1.png?raw=true "Copilot generate error")
-
-On the right-hand side, click the Extensions icon and then in the search bar, type "Copilot".
-
-![Copilot find extension](./images/copilot-error2.png?raw=true "Copilot find extension")
-
-Select the entry for the **GitHub Copilot** extension, then click on the **down arrow on the right of the Uninstall button**. In the menu that comes up next, click on **Install Another Version...***.
-
-![Copilot revert to previous version](./images/copilot-error3.png?raw=true "Copilot revert to previous version")
-
-Select a previous version from the drop-down list, such as v1.175.0.
-
-After this, the previous version will be automatically installed. Finally, click on the **Reload Window** button to update the codespace to use that previous version.

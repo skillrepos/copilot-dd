@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 3.4 - 03/29/24
+## Revision 4.0 - 05/30/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -489,10 +489,12 @@ the key is the state abbreviation and the value
    
 ![Disclaimer on actual values](./images/cdd132.png?raw=true "Disclaimer on actual values") 
 
+<p align="center">
+**[END OF LAB]**
 
-**Lab 9 - Agents and CLI**
+**Lab 9 - Agents**
 
-**Purpose: In this lab, we'll get some practice using GitHub Copilot agents and the Copilot CLI.**
+**Purpose: In this lab, we'll see how to work with GitHub Copilot agents.**
 
 1. Now let's see how Copilot can help with tasks using agents. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
    
@@ -539,33 +541,42 @@ Which files are using SQL?
 @workspace Which files are using SQL?
 ```
 
-9. After executing this, you should see Copilot assessing all of the files in teh workspace and then returning a more specific (and expected) answer.
-![more specific response](./images/cdd139.png?raw=true "more specific response")   
+9. After executing this, you should see Copilot assessing all of the files in teh workspace and then returning a more specific and expected answer.
     
-10. Finally, let's work with the Copilot command line interface. The codespace already has the GitHub CLI installed, so we just need to install the Copilot extension and authenticate. Enter the following in the terminal.
+![more specific response](./images/cdd139.png?raw=true "more specific response")
+
+<p align="center">
+**[END OF LAB]**
+</p>
+
+**Lab 10 - Copilot CLI**
+
+**Purpose: In this lab, we'll finish up with Copilot by using the CLI.**
+    
+1. Finally, let's work with the Copilot command line interface. The codespace already has the GitHub CLI installed, so we just need to install the Copilot extension and authenticate. Enter the following in the terminal.
 
 ```
 gh extension install github/gh-copilot
 ```
 
-11. After this, you can invoke the copilot command line to see the options available.
+2. After this, you can invoke the copilot command line to see the options available.
 
 ```
 gh copilot
 ```
 ![Copilot CLI help](./images/cdd94.png?raw=true "Copilot CLI help")
 
-12. To authenticate, use the command below in the terminal.
+3. To authenticate, use the command below in the terminal.
 
 ```
 gh auth login --web
 ```
 
-13. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize" button on the next screen after this to complete the process.
+4. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize" button on the next screen after this to complete the process.
 
 ![Copilot CLI auth](./images/cdd95.png?raw=true "Copilot CLI auth")
 
-14. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.
+5. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.
 
 ```
 gh copilot explain "ps -aux"
@@ -574,6 +585,7 @@ gh copilot suggest "install terraform"
  
 <p align="center">
 **[END OF LAB]**
+</p>
 
 <p align="center">
 **THANKS!**

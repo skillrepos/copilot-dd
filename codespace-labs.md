@@ -414,17 +414,12 @@ what is the latest Kubernetes version?
 ```
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 ```
-9. Notice that it tells us first we would need to make sure we have PIP installed. If you click in that particular chat output window, in the pop-up set of icons, the third icon from the left will allow you to directly insert that command into the terminal. For demo purposes, go ahead and click on that icon and insert the command into the terminal. You can then run it if you want, but it's not necessary.
-
-![Insert into terminal](./images/cdd123.png?raw=true "Insert into terminal")
-
-  
-10. Now, skip down to the actual code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
+9. Notice that it tells us first we would need to make sure we have PIP installed. We don't need to worry about this at the moment, so skip down to the actual code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
 
 ![Add code to new file](./images/cdd124.png?raw=true "Add code to new file")
 
 
-11. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go. Then, look in the separate chat output and you should see the equivalent Go code available.
+10. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go. Then, look in the separate chat output and you should see the equivalent Go code available.
 
 ```
 translate to Go 

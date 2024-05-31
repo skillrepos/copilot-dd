@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 4.0 - 05/30/24
+## Revision 4.1 - 05/30/24
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
@@ -24,9 +24,9 @@
 ```
 // function to parse data
 ```
-4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line.
+4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line. (Note that you should give Copilot a second to provide code suggestions before moving on to the next line.)
    
-5. After hitting tab, Copilot will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function. One example of what code may look like is below.
+5. After hitting tab, Copilot will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function (or Copilot stops generating additional code suggestions). One example of what code may look like is below.
 
 ![Copilot generated function](./images/cdd2.png?raw=true "Copilot generated function")
    
@@ -210,16 +210,28 @@ def test_is_prime():
 
 ![testing explanation](./images/cdd113.png?raw=true "testing explanation") 
 
-7. Let's see what the shortcut command would do. In the chat dialog enter "/tests" and then Enter. Note that the prompt will be replaced with "@workspace /tests" and then you'll see similar outputs.
-
+7. Let's see what the shortcut command would do. In the chat dialog enter "/tests" and then Enter. Copilot will want to add the *@workspace* agent onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
 ```
 /tests
 ```
-![shortcut test command] (./images/cdd114.png?raw=true "shortcut test command")
+8. Type a hash/sharp sign after /tests. At this point, Copilot should present a selection dialog. Choose #file from the menu.
+```
+/tests #
+```
+   
+![shortcut test command](./images/cdd140.png?raw=true "shortcut test command")
 
-8. We could put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file".  Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
+9. A dialog will pop up near the top of the codespace with a selection of files. Select the *prime.py* file to complete the command. 
 
-![Insert tests into new file](./images/cdd115.png?raw=true "Insert tests into new file") 
+![file choice dialog](./images/cdd141.png?raw=true "file choice dialog")
+
+10. Once the command looks like */tests #file:prime.py*, go ahead and hit enter to see the suggested test results.
+
+![file choice dialog](./images/cdd142.png?raw=true "file choice dialog")
+
+11. We can put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file". Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
+
+![Insert tests into new file](./images/cdd115a.png?raw=true "Insert tests into new file") 
 
 
 <p align="center">

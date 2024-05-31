@@ -428,7 +428,7 @@ what is the latest Kubernetes version?
 ```
 How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 ```
-9. Notice that it tells us first we would need to make sure we have PIP installed. We don't need to worry about this at the moment, so skip down to the actual code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
+9. The results may tell us that we first need to make sure something like PIP is installed. If so, we don't need to worry about this at the moment. Go to the actual generated code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
 
 ![Add code to new file](./images/cdd124.png?raw=true "Add code to new file")
 

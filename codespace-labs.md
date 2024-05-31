@@ -487,7 +487,7 @@ the key is the state abbreviation and the value
 7. It is likely that the generated text in the chat is still not complete. If that's the case, we may need to find a way to narrow the amount of data that's returned back in one instance by Copilot. Let's try a prompt that limits the max values returned to 5.
 
 ```
-create a mapping of all 50 states to area codes where
+create a complete mapping of all 50 states to area codes where
 the key is the state abbreviation and the value
  is an array of area codes with max 5
 ```

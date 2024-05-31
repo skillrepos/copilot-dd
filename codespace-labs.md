@@ -550,7 +550,7 @@ Which files are using SQL?
 @workspace Which files are using SQL?
 ```
 
-9. After executing this, you should see Copilot assessing all of the files in teh workspace and then returning a more specific and expected answer.
+9. After executing this, you should see Copilot assessing all of the files in the workspace and then returning a more specific and expected answer.
     
 ![more specific response](./images/cdd139.png?raw=true "more specific response")
 

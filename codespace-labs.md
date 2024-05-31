@@ -480,7 +480,7 @@ the key is the state abbreviation and the value
 ```
 create a mapping of the remaining states to area codes where
 the key is the state abbreviation and the value
- is an array of area codes with max 10cdd
+ is an array of area codes with max 10
 ```
 ![Completing the mappings](./images/cdd130.png?raw=true "Completing the mappings") 
 

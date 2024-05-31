@@ -371,7 +371,7 @@ Is the Seed function deprecated in Go?
 write a function to seed a random number generator
 ```
 
-8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change.
+8. This time, the code should be using the same format and NewSource function as you put in the file in step 6. You can just Accept the change. (If you don't see a complete function, but just a single line, try changing the prompt to be "write a complete function to seed a random number generator".
 
 ![Updated random number gen code after including updated usage](./images/cdd119.png?raw=true "Updated random number gen code after including updated usage")
 

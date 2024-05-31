@@ -582,7 +582,9 @@ gh auth login --web
 ```
 
 4. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize" button on the next screen after this to complete the process.
-
+```   
+export GITHUB_TOKEN=
+```
 ![Copilot CLI auth](./images/cdd95.png?raw=true "Copilot CLI auth")
 
 5. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.

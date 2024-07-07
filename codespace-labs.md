@@ -445,7 +445,7 @@ translate to Go
 **[END OF LAB]**
 </p>
     
-**Lab 8 - Exploring Javascript, regular expression generator, auto-generating data**
+**Lab 8 - Exploring JavaScript, regular expression generation, and auto-generating data**
 
 **Purpose: Show Javascript and regular expression generation, auto-generate routine mappings**
 

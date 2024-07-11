@@ -12,24 +12,12 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {
-				"editor.rulers": [80],
-				"editor.renderWhitespace": "boundary",
-				"errorLens.gutterIconsEnabled": true,
-				"errorLens.addAnnotationTextPrefixes": false,
-				"errorLens.enabledDiagnosticLevels": ["error", "warning"],
-			        "editor.wordWrap": "bounded",
-				"editor.wordWrapColumn": 9999
-			},
 			"extensions": [
 				"GitHub.copilot-chat",
-				"GitHub.copilot@1.175.0"
+				"GitHub.copilot"
 			]
 		}
-	},
+	}
 
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install -r requirements.txt"
 
 }

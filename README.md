@@ -19,10 +19,9 @@ You can also find help there for using Copilot in other supported IDEs, set the 
 
 ![Using Copilot options](./images/cdd31.png?raw=true "Using Copilot options")
 <br/><br/>
-## 2. Create your own codespace to run the labs by clicking on the button below.
+## 2. Create your own codespace to run the labs by clicking on the green *<> Code** button at the top right of the page, then select the *Codespaces* tab, and then click on *Create codespace on main*.
 <br/><br/>
-
-Click here ------> [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/skillrepos/copilot-dd?quickstart=1)
+![Open in GitHub Codespaces](./images/dga-codespaces2.png?raw=true "Open in GitHub Codespaces")
 
 <br/><br/>
 

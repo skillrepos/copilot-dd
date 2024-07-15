@@ -24,11 +24,6 @@ You can also find help there for using Copilot in other supported IDEs, set the 
 ![Open in GitHub Codespaces](./images/dga-codespaces2.png?raw=true "Open in GitHub Codespaces")
 
 <br/><br/>
-
-Then click on the option to create a new codespace.
-
-![Creating new codespace from button](./images/cdd109.png?raw=true "Creating new codespace from button")
-
 **This will run for several minutes while it gets everything ready.**
 
 

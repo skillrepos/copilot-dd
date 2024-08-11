@@ -421,9 +421,9 @@ How do I execute this?
 what is the latest Kubernetes version?
 ```
 
-7. Notice that it identifies the latest version as 1.22 as of September 2021. This highlights the out-of-date issue with the LLM.
+7. Notice that it identifies the latest version as 1.28 as of October 2023. This highlights the out-of-date issue with the LLM.
 
-![Answer to latest K8s version](./images/cdd122.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cdd145.png?raw=true "Answer to latest K8s version")
 
 
 8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
@@ -474,30 +474,12 @@ create a mapping of all 50 states to area codes where
 the key is the state abbreviation and the value
  is an array of area codes with max 10
 ```
-5. After running this, Copilot will generate the start of a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
+5. After running this, Copilot will generate the a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
 
-![Automatic gen of data](./images/cdd129.png?raw=true "Automatic gen of data") 
-
-6. Notice that the example mapping was only for the first few states. We want to get the remaining mappings for the other states. Let's craft a prompt to complete the sequence. Enter the following in the main Copilot Chat entry box and then execute it.
-
-```
-create a mapping of the remaining states to area codes where
-the key is the state abbreviation and the value
- is an array of area codes with max 10
-```
-![Completing the mappings](./images/cdd130.png?raw=true "Completing the mappings") 
-
-7. It is likely that the generated text in the chat is still not complete. If that's the case, we may need to find a way to narrow the amount of data that's returned back in one instance by Copilot. Let's try a prompt that limits the max values returned to 5.
-
-```
-create a complete mapping of all 50 states to area codes where
-the key is the state abbreviation and the value
- is an array of area codes with max 5
-```
-![Better prompt for remaining mappings](./images/cdd131.png?raw=true "Better prompt for remaining mappings") 
+![Automatic gen of data](./images/cdd146.png?raw=true "Automatic gen of data") 
 
 
-8. You can scroll to the bottom to confirm if you got entries for all the states. If you didn't, you could create additional prompts for specific ranges of states, change the number of values downward, etc. You could then copy these into your file if you want. Notice also the disclaimer at the bottom of the output that these may not be actual values.
+6. You can scroll to the bottom to confirm if you got entries for all the states. If you didn't, you could create additional prompts for specific ranges of states, change the number of values downward, etc. You could then copy these into your file if you want. You may also see a disclaimer at the bottom of the output that these may not be actual values.
    
 ![Disclaimer on actual values](./images/cdd132.png?raw=true "Disclaimer on actual values") 
 

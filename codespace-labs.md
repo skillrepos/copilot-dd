@@ -382,7 +382,7 @@ write a function to seed a random number generator
 **[END OF LAB]**
 </p>
 
-**Lab 7 - Kubernetes, YAML generation and the 2021 problem**
+**Lab 7 - Kubernetes, YAML generation and the 2023 problem**
 
 **Purpose: Show YAML generation and out of date content.**
 

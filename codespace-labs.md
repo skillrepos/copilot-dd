@@ -173,7 +173,7 @@ def is_prime(n):
 
 ![Generated doc for the code](./images/cdd44d.png?raw=true "Generated doc for the code")  
 
-8. While this is useful documentation for the start of the function, we'd like to have more extensive comments in the function body. So,let's get Copilot's help with that. Bring up the chat dialog again with **Cmd+I** and enter the text "verbosely comment this code". After Copilot completes its suggestions, if you're happy with them, you can just click *Accept*. 
+8. While this is useful documentation for the start of the function, we'd like to have more extensive comments in the function body. So,let's get Copilot's help with that. Bring up the chat dialog again with **Cmd+I** and enter the text "verbosely comment this code". After Copilot completes its suggestions, if you're happy with them, you can just click *Accept*. (If you don't see an *Accept* option, you can choose to *View in Chat* and then insert the suggestions into the file in place of the existing code.)
 
 ![Regenerating doc](./images/cdd110.png?raw=true "Regenerating doc")  
 
@@ -325,8 +325,7 @@ use instructor_id as the input parameter
 select * from courses.registrations where year(registration_date) = 2023 and month(registration_date) = 9;
 ```
 
-14. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), switch to the separate chat interface and entering "/optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
-
+14. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), switch to the separate chat interface and entering "/optimize" in the dialog. You can choose to replace the query in the original file with the optimized one if you want.
 ```
 /optimize
 ```

@@ -486,11 +486,11 @@ the key is the state abbreviation and the value
 <p align="center">
 **[END OF LAB]**
 
-**Lab 9 - Agents**
+**Lab 9 - Participants**
 
-**Purpose: In this lab, we'll see how to work with GitHub Copilot agents.**
+**Purpose: In this lab, we'll see how to work with GitHub Copilot participants.**
 
-1. Now let's see how Copilot can help with tasks using agents. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
+1. Now let's see how Copilot can help with tasks using participants. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
    
 - Select the *explore.go* file
 - Click on the *three-line menu* in the top left.
@@ -498,7 +498,7 @@ the key is the state abbreviation and the value
 
 ![Save file](./images/cdd133.png?raw=true "Save file")
 
-2. Now, let's invoke the **@terminal** agent to ask a common question about how to stage your code changes. Go to the *chat* interface and enter the prompt below. Afterwards, the command to do the staging should show up in the chat output.
+2. Now, let's invoke the **@terminal** participant to ask a common question about how to stage your code changes. Go to the *chat* interface and enter the prompt below. Afterwards, the command to do the staging should show up in the chat output.
 
 ```
 @terminal how do I stage explore.go?
@@ -514,13 +514,9 @@ the key is the state abbreviation and the value
 
 ![insert into terminal](./images/cdd136.png?raw=true "insert into terminal")
 
-5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. You can then copy the message and paste it into a *git commit* command in the terminal. **If you started your codespace from a fork, you can hit return to complete the commit if you want. This is optional. If you started your codespace via the one-click button, you will not have permissions to commit.**
-```
-git commit -m "<contents of generated commit message from Copilot goes here>"
-```
-![commit with generated message](./images/cdd137.png?raw=true "commit with generated message")
+5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. Normally, you could copy the message and paste it into a *git commit* command in the terminal. However, since you started your codespace via the one-click button from the original repository, you will not have permissions to commit. So, we won't do that right now.
 
-6. Now, let's switch gears and use the **@workspace** agent to help identify where we use certain things in our code. With the *explore.go* file still active in your editor, in the separate *chat* interface , enter the following prompt:
+6. Now, let's switch gears and use the **@workspace** participant to help identify where we use certain things in our code. With the *explore.go* file still active in your editor, in the separate *chat* interface , enter the following prompt:
 
 ```
 Which files are using SQL?
@@ -530,7 +526,7 @@ Which files are using SQL?
    
 ![initial query response](./images/cdd138.png?raw=true "initial query response")   
 
-8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* agent.
+8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* participant.
 ```
 @workspace Which files are using SQL?
 ```

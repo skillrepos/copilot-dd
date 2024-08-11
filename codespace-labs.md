@@ -486,9 +486,9 @@ the key is the state abbreviation and the value
 <p align="center">
 **[END OF LAB]**
 
-**Lab 9 - Participants**
+**Lab 9 - Chat Participants**
 
-**Purpose: In this lab, we'll see how to work with GitHub Copilot participants.**
+**Purpose: In this lab, we'll see how to work with GitHub Copilot chat participants.**
 
 1. Now let's see how Copilot can help with tasks using participants. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
    
@@ -556,19 +556,19 @@ gh copilot
 ```
 ![Copilot CLI help](./images/cdd94.png?raw=true "Copilot CLI help")
 
-3. To authenticate, use the command below in the terminal.
+3. To get full access to these commands, we first need to authenticate. To authenticate, use the command below in the terminal.
 
 ```
 gh auth login --web
 ```
 
-4. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that.) You'll need to click on the "Authorize GitHub" button on the next screen and then confirm your signin after this to complete the process.
+4. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that and then try again.) You'll need to click on the "Authorize GitHub" button on the next screen and then confirm your signin after this to complete the process.
 ```   
 export GITHUB_TOKEN=
 ```
 ![Copilot CLI auth](./images/cdd95.png?raw=true "Copilot CLI auth")
 
-5. Once you have authenticate, you can try a couple of *gh copilot* commands like the ones below to see an example of how the CLI works.
+5. Once you have authenticated, you can go back to the codespace and try a couple of *gh copilot* commands, like the ones below to see an example of how the CLI works.
 
 ```
 gh copilot explain "ps -aux"

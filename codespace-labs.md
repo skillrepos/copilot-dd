@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 4.5 - 07/16/24
+## Revision 5.0 - 11/02/24
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -63,7 +63,7 @@ Be patient - it takes a bit of time for Copilot to generate alternative suggesti
 
 ![alternative suggestions](./images/cdd106.png?raw=true "alternative suggestions")   
 
-13. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific funtion name.
+13. Let's do one more pass at getting a specific prompt for Copilot. Delete all the code currently in index.js. This time we will not enter a comment, but will enter a specific function name.
 Type the following in the empty file. (There are no parentheses after the *splitURLandReturnComponents* text.)  Do not hit tab or return yet.
 
 ```
@@ -107,10 +107,10 @@ def is_prime(n):
 /simplify
 ```
 
-![simplifying via chat box](./images/cdd35.png?raw=true "simplifying via chat box") 
+![simplifying via chat box](./images/cdd164.png?raw=true "simplifying via chat box") 
 
-7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there.
-   
+7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. 
+
 ![replace from chat suggestion](./images/cdd143.png?raw=true "replace from chat suggestion")    
 
 8. Now, let's introduce an error into the code to see how Copilot can fix it. Pick an instance of a variable name and change it to one that doesn't exist. For example, change an instance of "n" to "x". 
@@ -119,13 +119,13 @@ def is_prime(n):
 
 9. Notice the light bulb icon that has popped up. Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot.
 
-![Copilot options inline](./images/cdd38b.png?raw=true "Copilot options inline")   
+![Copilot options inline](./images/cdd165.png?raw=true "Copilot options inline")   
 
 10. Go ahead and click on the "Fix using Copilot" option.
 
 11. After a few moments, it should propose a fix that you can just accept (via the Accept button). You can also click on the *Show Changes* icon to see before/after for the proposed changes. (If it doesn't propose a fix in the dialog, you can skip to step 12 and use the /fix command in chat instead.)
 
-![Fixing with Copilot](./images/cdd107a.png?raw=true "Fixing with Copilot")       
+![Fixing with Copilot](./images/cdd166.png?raw=true "Fixing with Copilot")       
 
 12. (Optional) If you'd like, you can go back and make the error again, highlight the code, and then use the /fix command in the chat window to get the same results.
 
@@ -173,7 +173,7 @@ def is_prime(n):
 
 ![Generated doc for the code](./images/cdd44d.png?raw=true "Generated doc for the code")  
 
-8. While this is useful documentation for the start of the function, we'd like to have more extensive comments in the function body. So,let's get Copilot's help with that. Bring up the chat dialog again with **Cmd+I** and enter the text "verbosely comment this code". After Copilot completes its suggestions, if you're happy with them, you can just click *Accept*. (If you don't see an *Accept* option, you can choose to *View in Chat* and then insert the suggestions into the file in place of the existing code.)
+8. While this is useful documentation for the start of the function, we'd like to have more extensive comments in the function body. So,let's get Copilot's help with that. Bring up the chat dialog again with **Cmd+I** and enter the text "verbosely comment this code". After Copilot completes its suggestions, if you're happy with them, you can just click *Accept*. 
 
 ![Regenerating doc](./images/cdd110.png?raw=true "Regenerating doc")  
 
@@ -214,7 +214,7 @@ def test_is_prime():
 
 ![testing explanation](./images/cdd113.png?raw=true "testing explanation") 
 
-7. Let's see what the shortcut command would do. In the chat dialog enter "/tests" and then Enter. Copilot will want to add the *@workspace* agent onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
+7. Let's see what the shortcut command would do. In the main chat interface, enter "/tests" and then Enter. Copilot will want to add the *@workspace* agent onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
 ```
 /tests
 ```
@@ -231,11 +231,11 @@ def test_is_prime():
 
 10. Once the command looks like */tests #file:prime.py*, go ahead and hit enter to see the suggested test results.
 
-![file choice dialog](./images/cdd142.png?raw=true "file choice dialog")
+![Select to insert](./images/cdd167.png?raw=true "select to insert")
 
-11. We can put this into a new file by hovering over the output in the Chat window, then selecting the "..." from the pop-up menu and selecting "Insert into new file". Go ahead and select that option and then you'll have a new file in your editor with the code that you can save as needed.
+11. We can put this into a new file selecting the checkmark symbol in the chat output. Go ahead and click on the checkmark and then you'll have a new file in your editor with the code that you can save as needed.
 
-![Insert tests into new file](./images/cdd115a.png?raw=true "Insert tests into new file") 
+![After insert](./images/cdd168.png?raw=true "after insert") 
 
 
 <p align="center">
@@ -259,41 +259,35 @@ Enter the following comment below and press Tab to accept suggestions. Remember 
 ```
 -- define a select statement to get all students enrolled in a course
 ```
-3. Go ahead and save this file as part of the project.  You can do this from the "3-line" menu under File->Save, or just click on the X next to the file's name in it's tab and select to Save it.
+3. Go ahead and save this file as part of the project.  You can do this from the "3-line" menu under File->Save, or just use the keyboard shortcut (Cmd + S | Ctrl + S)     
 
-![Save sql file](./images/cdd96.png?raw=true "Save sql file") 
-
-4. If the file is no longer open in the tabs, you can select the "Explorer" icon at the top of the sidebar and select the file in the list to open it back up.
-
-![Reopening the file](./images/cdd108.png?raw=true "Reopening the file")    
-
-5. Let's see if we get any different results if we provide Copilot additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
+4. Let's see if we get any different results if we provide Copilot additional context. Open the file create-tables.sql in the editor from the GitHub repository. (You can either select and open it from the file list or use the command below from the terminal.) Scroll through it and take a quick look at the contents.
 
 ```
 code create-tables.sql
 ```
 
-6. Now with that file open, go back up to the top of the dev.sql file.  Highlight and delete the comment and resulting query from step 2.
+5. Now with that file open, go back up to the top of the dev.sql file.  Highlight and delete the comment and resulting query from step 2.
   
-7. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Copilot suggests this time. You can accept the suggestions or cycle through options. (If you first get a duplicate line as the query, just hit Enter and Copilot should start making more meaningful suggestions.)
+6. Enter the same comment as before to request the query. (Basically, repeat step 2.) See what Copilot suggests this time. You can accept the suggestions or cycle through options. (If you first get a duplicate line as the query, just hit Enter and Copilot should start making more meaningful suggestions.)
 
 ```
 -- define a select statement to get all students enrolled in a course
 ```
 
-8. If all goes well, this second pass should generate a query with many more specific references to the names and identifiers used in *create-tables.sql*.  (If not, delete the result and try again.) Take a look at the query and then compare the names/identifiers used to the ones in the *create-tables.sql* file. This will show that Copilot picks up on context from other files available to it to make better suggestions.
+7. If all goes well, this second pass should generate a query with many more specific references to the names and identifiers used in *create-tables.sql*.  (If not, delete the result and try again.) Take a look at the query and then compare the names/identifiers used to the ones in the *create-tables.sql* file. This will show that Copilot picks up on context from other files available to it to make better suggestions.
 
 ![New query](./images/cdd97.png?raw=true "New query") 
 
    
-9. In some cases, we might be able to use a separate index to speed up operations.  Let's ask Copilot to create a new index based on the last query. Add the following line after the current query in the file *dev.sql*.
+8. In some cases, we might be able to use a separate index to speed up operations.  Let's ask Copilot to create a new index based on the last query. Add the following line after the current query in the file *dev.sql*.
 
 ```
 -- write an index to improve the performance of the query
 ```
 ![index](./images/cdd98.png?raw=true "index") 
 
-10. Let's suppose we also want to have a table to capture student attendance. We can ask Copilot to create the table definition for us.
+9. Let's suppose we also want to have a table to capture student attendance. We can ask Copilot to create the table definition for us.
 
 ```
 -- define a table for student attendance to capture attendance by class
@@ -303,14 +297,14 @@ code create-tables.sql
 
 ![status values](./images/cdd99.png?raw=true "status values") 
 
-11. Copilot can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Copilot Chat via the shortcut and then enter the line below in the dialog. You can choose to **Accept** or **Discard** the result.
+10. Copilot can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Copilot Chat via the shortcut and then enter the line below in the dialog. You can choose to **Accept** or **Discard** the result.
 
 ```
 define a stored procedure to get course enrollment by location
 ```
 ![prompt for stored procedure](./images/cdd100.png?raw=true "prompt for stored procedure") 
   
-12. We can be more prescriptive with our stored procedure definition.  Let's add a more complex request. Go to the Chat interface extension via clicking on the icon on the tool bar (if its not already opened). In the Chat window, enter the prompt below.
+11. We can be more prescriptive with our stored procedure definition.  Let's add a more complex request. Go to the Chat interface and enter the prompt below.
 
 ```
 define a stored procedure to get instructor details associated with a location
@@ -319,13 +313,14 @@ use instructor_id as the input parameter
 ```
 ![More extensive stored procedure definition](./images/cdd51.png?raw=true "More extensive stored procedure definition") 
 
-13. Finally, let's see Copilot optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
+12. Finally, let's see Copilot optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
 
 ```
 select * from courses.registrations where year(registration_date) = 2023 and month(registration_date) = 9;
 ```
 
-14. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), switch to the separate chat interface and entering "/optimize" in the dialog. You can choose to replace the query in the original file with the optimized one if you want.
+13. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), and in a chat interface enter "/optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
+
 ```
 /optimize
 ```
@@ -382,9 +377,9 @@ write a function to seed a random number generator
 **[END OF LAB]**
 </p>
 
-**Lab 7 - Kubernetes, YAML generation and the 2023 problem**
+**Lab 7 - YAML generation, API use, translating code and the 2023 problem**
 
-**Purpose: Show YAML generation and out of date content.**
+**Purpose: In this lab, we’ll learn about how to have Copilot help with YAML generation, API usage, translating code and explore the 2023 problem.**
 
 1. Create a new file - **deployment.yaml**
 
@@ -421,9 +416,9 @@ How do I execute this?
 what is the latest Kubernetes version?
 ```
 
-7. Notice that it identifies the latest version as 1.28 as of October 2023. This highlights the out-of-date issue with the LLM.
+7. Notice that it identifies the latest version as as of October 2023. This highlights the out-of-date issue with the LLM.
 
-![Answer to latest K8s version](./images/cdd145.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cdd122.png?raw=true "Answer to latest K8s version")
 
 
 8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
@@ -444,61 +439,19 @@ translate to Go
 ![Go translation](./images/cdd125.png?raw=true "Go translation")
 
 
+
 <p align="center">
 **[END OF LAB]**
 </p>
     
-**Lab 8 - Exploring JavaScript, regular expression generation, and auto-generating data**
 
-**Purpose: Show Javascript and regular expression generation, auto-generate routine mappings**
+**Lab 8 - Chat Participants**
 
-1. Create a new file as **phone.js**
+**Purpose: In this lab, we'll see how to work with GitHub Copilot Chat Participants.**
 
-```
-code phone.js
-```
-
-2. Prompt Copilot to create a function with a regular expression to validate a US phone number. You can use the **CMD+I** interface and just *Accept* the results.
-```
-create a function to validate any global phone number using a regular expression
-```
-![Regex function to validate phone #](./images/cdd127.png?raw=true "regex function to validate phone #")
-
-3. Let's tell it to document the function by highlighting the code, invoking **CMD+I** and **/doc**.  You can just Accept the results.
-
-![Automatic doc of function](./images/cdd128.png?raw=true "Automatic doc of function")  
-
-4. Now let's see how Copilot can generate some data and mappings for us automatically. Enter the prompt below in the main/separate chat text entry area.
-```
-create a mapping of all 50 states to area codes where
-the key is the state abbreviation and the value
- is an array of area codes with max 10
-```
-5. After running this, Copilot will generate the a list as shown below. Hover over the output area and click to insert the updates at the cursor in the *phone.js* file. (This assumes the cursor is below the previous function in the file.)
-
-![Automatic gen of data](./images/cdd146.png?raw=true "Automatic gen of data") 
-
-
-6. You can scroll to the bottom to confirm if you got entries for all the states. If you didn't, you could create additional prompts for specific ranges of states, change the number of values downward, etc. You could then copy these into your file if you want. You may also see a disclaimer at the bottom of the output that these may not be actual values.
+1. Now let's see how Copilot can help with tasks using chat participants. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved.
    
-![Disclaimer on actual values](./images/cdd132.png?raw=true "Disclaimer on actual values") 
-
-<p align="center">
-**[END OF LAB]**
-
-**Lab 9 - Chat Participants**
-
-**Purpose: In this lab, we'll see how to work with GitHub Copilot chat participants.**
-
-1. Now let's see how Copilot can help with tasks using participants. First, we'll have Copilot help us commit a change.  Let's use the *explore.go* file we created in Lab 6. If you haven't already, make sure that file is saved. You can do this by:
-   
-- Select the *explore.go* file
-- Click on the *three-line menu* in the top left.
-- From the menu that comes up, select *File* and then select *Save* (or use the shortcut).
-
-![Save file](./images/cdd133.png?raw=true "Save file")
-
-2. Now, let's invoke the **@terminal** participant to ask a common question about how to stage your code changes. Go to the *chat* interface and enter the prompt below. Afterwards, the command to do the staging should show up in the chat output.
+2. Now, let's invoke the **@terminal** chat participant to ask a common question about how to stage your code changes. Go to the *chat* interface and enter the prompt below. Afterwards, the command to do the staging should show up in the chat output.
 
 ```
 @terminal how do I stage explore.go?
@@ -507,16 +460,16 @@ the key is the state abbreviation and the value
 
 3. Hover over the window with the commands in it, and then click on the icon that pops up for the terminal. Click on that to insert the command into the terminal. Then hit return.
 
-![insert into terminal](./images/cdd135.png?raw=true "insert into terminal")
+![insert into terminal](./images/cdd171.png?raw=true "insert into terminal")
 
 
 4. Now let's commit our change through the interface and have Copilot suggest a commit message for us. Click on the source control icon in the sidebar (#1 in the figure below). Your *explore.go* file should be selected. In the box titled "Message" above the *Commit bar*, click on the *sparkle icon* at the far right side (#2 in the figure below).
 
 ![insert into terminal](./images/cdd136.png?raw=true "insert into terminal")
 
-5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. Normally, you could copy the message and paste it into a *git commit* command in the terminal. However, since you started your codespace via the one-click button from the original repository, you will not have permissions to commit. So, we won't do that right now.
+5. After this, Copilot should (hopefully) generate an appropriate commit message in that box. Since we started the codespace via the button in the readme, you won't have direct commit access, so you can just proceed to the next step.
 
-6. Now, let's switch gears and use the **@workspace** participant to help identify where we use certain things in our code. With the *explore.go* file still active in your editor, in the separate *chat* interface , enter the following prompt:
+6. Now, let's switch gears and use the **@workspace** chat participant to help identify where we use certain things in our code. With the *explore.go* file still active in your editor, in the separate *chat* interface , enter the following prompt:
 
 ```
 Which files are using SQL?
@@ -526,7 +479,7 @@ Which files are using SQL?
    
 ![initial query response](./images/cdd138.png?raw=true "initial query response")   
 
-8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* participant.
+8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* chat participant.
 ```
 @workspace Which files are using SQL?
 ```
@@ -539,45 +492,70 @@ Which files are using SQL?
 **[END OF LAB]**
 </p>
 
-**Lab 10 - Copilot CLI**
 
-**Purpose: In this lab, we'll finish up with Copilot by using the CLI.**
-    
-1. Finally, let's work with the Copilot command line interface. The codespace already has the GitHub CLI installed, so we just need to install the Copilot extension and authenticate. Enter the following in the terminal.
+**Lab 9 - Copilot in GitHub**
 
-```
-gh extension install github/gh-copilot
-```
+**Purpose: In this lab, we'll see how to use the integrated chat interface in GitHub.**
 
-2. After this, you can invoke the copilot command line to see the options available.
+1. To give us a project to work with, we'll fork a repository from my GitHub area. Switch back to GitHub in the browser and go to https://github.com/skillrepos/sec-demo. (Make sure you are logged in as your GitHub userid that has Copilot access.)
 
-```
-gh copilot
-```
-![Copilot CLI help](./images/cdd94.png?raw=true "Copilot CLI help")
+2. Fork the skillsrepo/demo repository into your own GitHub space via the *Fork* button at the top right. Make sure to **uncheck** the *Copy the main branch only* box on the second screen.
 
-3. To get full access to these commands, we first need to authenticate. To authenticate, use the command below in the terminal.
+![fork repo](./images/cdd172.png?raw=true "Fork repo")
+![uncheck checkbox](./images/cdd147.png?raw=true "Uncheck checkbox")
 
-```
-gh auth login --web
-```
+3. After the fork is complete, in your fork, click on the *Chat with Copilot* button at the top right. The chat dialog will open up and then you will have a chat input box and some suggested questions. Click on the *Can you tell me about this repository?* question.  (If you don't see it, you can select one of the others or type in the question.) After this runs, you'll get some basic info about the repository.
 
-4. Follow the prompts. You'll get a one-time activation code that you should copy and then paste in the browser when prompted. (If you happen to get a message about an issue with GITHUB_TOKEN, you can use the command *export GITHUB_TOKEN=* to clear that and then try again.) You'll need to click on the "Authorize GitHub" button on the next screen and then confirm your signin after this to complete the process.
-```   
-export GITHUB_TOKEN=
-```
-![Copilot CLI auth](./images/cdd95.png?raw=true "Copilot CLI auth")
-
-5. Once you have authenticated, you can go back to the codespace and try a couple of *gh copilot* commands, like the ones below to see an example of how the CLI works.
-
-```
-gh copilot explain "ps -aux"
-gh copilot suggest "install terraform"
-```
+ ![about the repo query](./images/cdd148.png?raw=true "About the repo query") 
+ ![about the repo response](./images/cdd149.png?raw=true "About the repo response") 
  
-<p align="center">
-**[END OF LAB]**
-</p>
+4. Now, in the list of files in the repo, select the *main.go* file to open it up. The Copilot Chat interface should change to one specific for the file. Click on the *Summarize this file for me* question or type it into the input area. (If you don't see this in the dialog, try starting a new conversation by clicking on the "+" sign in the upper right of the dialog.) After this runs, you'll see a summarization of the file.
+
+ ![about the file query](./images/cdd150.png?raw=true "About the file query") 
+ ![about the file response](./images/cdd151.png?raw=true "About the file response") 
+ 
+5. In this repo, we have a *dev* branch with some fixes for security vulnerabilities in the *main* branch. Let's create a pull request to merge the *dev* branch into the *main* branch. We could initiate the pull request manually, but since we have the Copilot Chat available, let's have it expedite the process by creating a simple link for us to use to start the pull request. In the Chat input area, tell Copilot to generate an appropriate URL via the prompt below and then submit it. After Copilot is done, you should see a link displayed.
+```
+Generate a url that I can use to create a pull request to merge the dev branch into the main branch
+```
+
+ ![generate pr link](./images/cdd152.png?raw=true "Generate pr link") 
+ ![generated link](./images/cdd153.png?raw=true "Generated link") 
+ 
+6. Click on the link in the chat dialog. This should open up a screen with a pull request initiated for merging the dev branch into the main branch. Close the Chat interface by clicking on the **^** symbol in the upper right corner of the dialog.
+
+ ![collapse chat](./images/cdd154.png?raw=true "Collapse chat")  
+  
+7. In the pull request, update the title if you want. Then, we'll have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary.
+
+ ![generate summary](./images/cdd155.png?raw=true "Generate summary")  
+ ![summary](./images/cdd156.png?raw=true "Summary")  
+  
+8. The summary will be in *markdown* format. You can click on the *Preview* button to see a readable presentation. When ready, click the *Create pull request* button to finish the creation.
+
+ ![summary](./images/cdd157.png?raw=true "Summary") 
+
+9. Notice that in the *Security Improvements* section, Copilot has generated links for each of the changes in the *models/models.go* file. Let's click on the 2nd link to look at those changes.
+
+ ![looking at a change](./images/cdd158.png?raw=true "Looking at a change") 
+
+10. This will open up the change comparison screen. Let's ask Copilot for some more information about the highlighted change. On the right of the screen will be a small, floating Copilot icon with a drop-down arrow. Click on that and select the *Explain* option. After this runs, you'll see an explanation of the highlighted section.
+
+ ![request explanation](./images/cdd159.png?raw=true "Request explanation") 
+ ![section explanation](./images/cdd160.png?raw=true "Section explanation")
+
+11. Now, let's add a file to the context for the chat. Click on the *Ask Copilot* button at the top of the screen. In the *Select files to discuss* dialog, select *models/models.go*, check the box and then *Save*. You'll then see the file attached as context in the Chat dialog.
+    
+![add file for context](./images/cdd161.png?raw=true "Add file for context")
+![file added to context](./images/cdd162.png?raw=true "File added to context")
+
+12. Finally, we'll prompt Copilot about why the changes need to be made. In the Chat input area, enter the prompt *Why do these changes need to be made?* It will use this file as context and respond accordingly. Notice in the screenshot below, the indicator for *1 reference - models.go*.
+```
+Why do these changes need to be made?
+```
+![answer with file as context](./images/cdd163.png?raw=true "Answer with file as context")
+
+We're not going to go through and resolve the pull request, so you are done!
 
 <p align="center">
 **THANKS!**

@@ -210,6 +210,8 @@ def test_is_prime():
 ```
 ![prompting on how to test](./images/cdd112.png?raw=true "prompting on how to test") 
 
+(If you happen to encounter a dialog about confirming your testing environment, just hit *Accept* and run the query again.)
+
 6. After entering this, you should see an explanation of how to test the code along with suggested testing code. If you expand the reference in the chat output, you can see that it only used the selected lines.
 
 ![testing explanation](./images/cdd113.png?raw=true "testing explanation") 

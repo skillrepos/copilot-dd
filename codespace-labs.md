@@ -235,7 +235,7 @@ def test_is_prime():
 
 ![Select to insert](./images/cdd167.png?raw=true "select to insert")
 
-11. We can put this into a new file selecting the checkmark symbol in the chat output. Go ahead and click on the checkmark and then you'll have a new file in your editor with the code that you can save as needed.
+11. If you have a checkmark symbol in the chat output, select that. If you don't, hover over the code block, and in the popup menu, select the *...* entry and then the "Insert into New File" opton. After that, you'll have a new file in your editor with the code that you can save as needed.
 
 ![After insert](./images/cdd168.png?raw=true "after insert") 
 

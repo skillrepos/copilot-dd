@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 5.0 - 11/02/24
+## Revision 5.1 - 11/04/24
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -109,7 +109,7 @@ def is_prime(n):
 
 ![simplifying via chat box](./images/cdd164.png?raw=true "simplifying via chat box") 
 
-7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. 
+7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. Accept any changes.
 
 ![replace from chat suggestion](./images/cdd143.png?raw=true "replace from chat suggestion")    
 

@@ -524,7 +524,7 @@ Generate a url that I can use to create a pull request to merge the dev branch i
  ![generate pr link](./images/cdd152.png?raw=true "Generate pr link") 
  ![generated link](./images/cdd153.png?raw=true "Generated link") 
  
-6. Click on the link in the chat dialog. This should open up a screen with a pull request initiated for merging the dev branch into the main branch. Close the Chat interface by clicking on the **^** symbol in the upper right corner of the dialog.
+6. Click on the link in the chat dialog. This should open up a screen with a pull request initiated for merging the dev branch into the main branch. Close the Chat interface by clicking on the small downward-pointing arrow **v** symbol in the upper right corner of the dialog.
 
  ![collapse chat](./images/cdd154.png?raw=true "Collapse chat")  
   
@@ -537,7 +537,7 @@ Generate a url that I can use to create a pull request to merge the dev branch i
 
  ![summary](./images/cdd157.png?raw=true "Summary") 
 
-9. Notice that in the *Security Improvements* section, Copilot has generated links for each of the changes in the *models/models.go* file. Let's click on the 2nd link to look at those changes.
+9. Notice that in the *Security Improvements* section, Copilot has generated links for each of the changes in the *models/models.go* file. Let's click on the 2nd link to look at those changes. (If you don't see the individual numbers, just click on the second list item.)
 
  ![looking at a change](./images/cdd158.png?raw=true "Looking at a change") 
 

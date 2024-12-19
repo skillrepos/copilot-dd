@@ -305,12 +305,12 @@ code create-tables.sql
 
 ![status values](./images/cdd99.png?raw=true "status values") 
 
-10. Copilot can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Copilot Chat via the shortcut and then enter the line below in the dialog. You can choose to **Accept** or **Discard** the result.
+10. Copilot can also create stored procedures. Let's ask it to create a new stored procedure for getting a list of enrolled students at a particular location. Let's use the **CMD+I** shortcut. Go to the bottom of the *dev.sql* file, invoke Copilot Chat via the shortcut and then enter the line below in the dialog. You can also choose to change the model to Claude 3.5 Sonnet if you want. If you want to change the model, select it in the model drop-down, then you will probably need to select the *Enable* button and re-enter the prompt.  After the prompt is executed, you can choose to **Accept** or **Discard** the result.
 
 ```
 define a stored procedure to get course enrollment by location
 ```
-![prompt for stored procedure](./images/cdd100.png?raw=true "prompt for stored procedure") 
+![prompt for stored procedure](./images/cdd182.png?raw=true "prompt for stored procedure") 
   
 11. We can be more prescriptive with our stored procedure definition.  Let's add a more complex request. Go to the Chat interface and enter the prompt below.
 
@@ -319,7 +319,7 @@ define a stored procedure to get instructor details associated with a location
 include instructor details, location details, and courses associated with the instructor
 use instructor_id as the input parameter
 ```
-![More extensive stored procedure definition](./images/cdd51.png?raw=true "More extensive stored procedure definition") 
+![More extensive stored procedure definition](./images/cdd183.png?raw=true "More extensive stored procedure definition") 
 
 12. Finally, let's see Copilot optimize a query for us. Suppose we want to get all the course registrations for September, 2023.  Enter the following query in the file.
 
@@ -332,8 +332,11 @@ select * from courses.registrations where year(registration_date) = 2023 and mon
 ```
 /optimize
 ```
-![Optimizing a query](./images/cdd116.png?raw=true "Optimizing a query") 
+![Optimizing a query](./images/cdd184.png?raw=true "Optimizing a query") 
 
+14. If you switched to the Claude 3.5 Sonnet model, you can switch back to the GPT 4o one if you want via the dropdown in the dialog.
+
+![Switching models](./images/cdd185.png?raw=true "switching models") 
     
 <p align="center">
 **[END OF LAB]**

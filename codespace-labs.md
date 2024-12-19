@@ -526,7 +526,7 @@ Which files are using SQL?
 
 **Purpose: In this lab, we'll see how to use the integrated chat interface in GitHub.**
 
-1. To give us a project to work with, we'll fork a repository from my GitHub area. Switch back to GitHub in the browser and go to https://github.com/skillrepos/sec-demo. (Make sure you are logged in as your GitHub userid that has Copilot access.)
+1. To give us a project to work with, we'll fork a repository from my GitHub area. Switch back to GitHub in the browser and go to https://github.com/skillrepos/sec-demo. 
 
 2. Fork the skillsrepo/demo repository into your own GitHub space via the *Fork* button at the top right. Make sure to **uncheck** the *Copy the main branch only* box on the second screen.
 
@@ -538,7 +538,7 @@ Which files are using SQL?
  ![about the repo query](./images/cdd148.png?raw=true "About the repo query") 
  ![about the repo response](./images/cdd149.png?raw=true "About the repo response") 
  
-4. Now, in the list of files in the repo, select the *main.go* file to open it up. The Copilot Chat interface should change to one specific for the file. Click on the *Summarize this file for me* question or type it into the input area. (If you don't see this in the dialog, try starting a new conversation by clicking on the "+" sign in the upper right of the dialog.) After this runs, you'll see a summarization of the file.
+4. Now, in the list of files in the repo, select the *main.go* file to open it up. In the chat dialog, start a new conversation by clicking on the "+" sign in the upper right of the dialog. This should switch the context to the file. Click on the *Summarize this file for me* question or type it into the input area. After this runs, you'll see a summarization of the file.
 
  ![about the file query](./images/cdd150.png?raw=true "About the file query") 
  ![about the file response](./images/cdd151.png?raw=true "About the file response") 
@@ -551,9 +551,9 @@ Generate a url that I can use to create a pull request to merge the dev branch i
  ![generate pr link](./images/cdd152.png?raw=true "Generate pr link") 
  ![generated link](./images/cdd153.png?raw=true "Generated link") 
  
-6. Click on the link in the chat dialog. This should open up a screen with a pull request initiated for merging the dev branch into the main branch. Close the Chat interface by clicking on the small downward-pointing arrow **v** symbol in the upper right corner of the dialog.
+6. Click on the link in the chat dialog. This should open up a screen with a pull request initiated for merging the dev branch into the main branch. Close the Chat interface by clicking on the **X** symbol in the upper right corner of the dialog.
 
- ![collapse chat](./images/cdd154.png?raw=true "Collapse chat")  
+ ![collapse chat](./images/cdd193.png?raw=true "Collapse chat")  
   
 7. In the pull request, update the title if you want. Then, we'll have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary.
 
@@ -573,7 +573,7 @@ Generate a url that I can use to create a pull request to merge the dev branch i
  ![request explanation](./images/cdd159.png?raw=true "Request explanation") 
  ![section explanation](./images/cdd160.png?raw=true "Section explanation")
 
-11. Now, let's add a file to the context for the chat. Click on the *Ask Copilot* button at the top of the screen. In the *Select files to discuss* dialog, select *models/models.go*, check the box and then *Save*. You'll then see the file attached as context in the Chat dialog.
+11. Now, let's add a file to the context for the chat. Click on the *Ask Copilot* button at the top of the screen. In the *Select files to discuss* dialog, select *models/models.go*, check the box and then *Save* if the chat dialog is open or *Start Chat* if the dialog is not open. You'll then see the file attached as context in the Chat dialog.
     
 ![add file for context](./images/cdd161.png?raw=true "Add file for context")
 ![file added to context](./images/cdd162.png?raw=true "File added to context")

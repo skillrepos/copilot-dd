@@ -151,6 +151,7 @@ simplify
 ```
 
 ![Output of interactively telling Copilot to explain code in dialog](./images/cdd144.png?raw=true "Output of interactively telling Copilot to explain code in dialog")
+
 ![Output of interactively telling Copilot to explain code](./images/cdd177.png?raw=true "Output of interactively telling Copilot to explain code")
 
 3. Now, let's do the same request but through a comment. In the *prime.py* file, below the code, on a new line, enter the following comment and hit Enter.

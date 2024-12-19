@@ -209,21 +209,21 @@ def test_is_prime():
 5. Now, switch to the chat interface and ask Copilot using the following prompt:
 
 ```
-#selection: How do I test this code?
+#selection How do I test this code?
 ```
-![prompting on how to test](./images/cdd112.png?raw=true "prompting on how to test") 
+![prompting on how to test](./images/cdd178.png?raw=true "prompting on how to test") 
 
 (If you happen to encounter a dialog about confirming your testing environment, just hit *Accept* and run the query again.)
 
-6. After entering this, you should see an explanation of how to test the code along with suggested testing code. If you expand the reference in the chat output, you can see that it only used the selected lines.
+6. After entering this, you should see an explanation of how to test the code along with suggested testing code. If you expand the reference in the chat output, you can see that it used the selected lines.
 
-![testing explanation](./images/cdd113.png?raw=true "testing explanation") 
+![testing explanation](./images/cdd179.png?raw=true "testing explanation") 
 
 7. Let's see what the shortcut command would do. In the main chat interface, enter "/tests" and then Enter. Copilot will want to add the *@workspace* agent onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
 ```
 /tests
 ```
-8. Type a hash/sharp sign after /tests. At this point, Copilot should present a selection dialog. Choose #file from the menu.
+8. Type a hash/sharp sign after /tests. At this point, Copilot should present a selection dialog. Choose #file from the menu using the keyboard arrow keys and Enter.
 ```
 /tests #
 ```
@@ -238,10 +238,13 @@ def test_is_prime():
 
 ![Select to insert](./images/cdd167.png?raw=true "select to insert")
 
-11. If you have a checkmark symbol in the chat output, select that. If you don't, hover over the code block, and in the popup menu, select the *...* entry and then the "Insert into New File" opton. After that, you'll have a new file in your editor with the code that you can save as needed.
+11. If you have a checkmark symbol in the chat output, select that. If you don't, hover over the code block, and in the popup menu, select the *...* entry and then the "Insert into New File" opton. 
 
-![After insert](./images/cdd168.png?raw=true "after insert") 
+![After insert](./images/cdd180.png?raw=true "after insert") 
 
+12. After that, you'll have a new file in your editor with the code that you can save as needed (using the "3 bar" menu or the shortcut Ctrl/Cmd+S).
+
+![Saving file](./images/cdd181.png?raw=true "saving file") 
 
 <p align="center">
 **[END OF LAB]**

@@ -7,7 +7,11 @@
 
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
-**NOTE: To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
+**NOTES:**
+a. Chrome may work better than Firefox for some tasks.
+b. To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
+c. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
+d. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
 
 **Lab 1 - Learning how to create good prompts for Copilot**
 
@@ -555,7 +559,9 @@ Generate a url that I can use to create a pull request to merge the dev branch i
 
  ![collapse chat](./images/cdd193.png?raw=true "Collapse chat")  
   
-7. In the pull request, update the title if you want. If you have one of the trial or paid plans, you can have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary. (If you are on the free plan, you won't see the Copilot icon in the pull request area. If that's the case, you can just create the pull request, open up the *Files changed* tab, pick a change and go to step 10.)
+7. In the pull request, update the title if you want. If you have one of the trial or paid plans, you can have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary.
+
+(Note: *If you are on the free (not trial) plan, you won't see the Copilot icon in the pull request area. If that's the case, you can just create the pull request, open up the "Files changed" tab, pick a change and go to step 10.*)
 
  ![generate summary](./images/cdd155.png?raw=true "Generate summary")  
  ![summary](./images/cdd156.png?raw=true "Summary")  

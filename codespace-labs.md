@@ -394,6 +394,10 @@ write a function to seed a random number generator
 
 ![Updated random number gen code after including updated usage](./images/cdd119.png?raw=true "Updated random number gen code after including updated usage")
 
+9. In preparation for the next lab, open a new chat by clicking on the "+" sign in the upper right part of the chat pane.
+
+![New chat](./images/cdd187.png?raw=true "New chat") 
+
 <p align="center">
 **[END OF LAB]**
 </p>
@@ -428,10 +432,10 @@ How do I execute this?
 
 5. Copilot should respond with something like the following:
 
-![How to execute deployment](./images/cdd121.png?raw=true "How to execute deployment")
+![How to execute deployment](./images/cdd188.png?raw=true "How to execute deployment")
 
 
-6. While we're in the Chat interface, let's ask it for the latest K8s version. Put the following into the dialog.
+6. While we're in the Chat interface, let's ask it for the latest K8s version. Put the following into the dialog. (If you get a *Request Failed* message, click on the *rerun without* link to *GitHub* above the error message.)
 
 ```
 what is the latest Kubernetes version?
@@ -439,7 +443,7 @@ what is the latest Kubernetes version?
 
 7. Notice that it identifies the latest version as as of October 2023. This highlights the out-of-date issue with the LLM.
 
-![Answer to latest K8s version](./images/cdd122.png?raw=true "Answer to latest K8s version")
+![Answer to latest K8s version](./images/cdd189.png?raw=true "Answer to latest K8s version")
 
 
 8. Let's have Copilot generate some code to work with Kubernetes through the API. In the chat interface, enter the following.
@@ -449,7 +453,7 @@ How do I call the K8s API for scaling a deployment to 5 replicas with Python?
 ```
 9. The results may tell us that we first need to make sure something like PIP is installed. If so, we don't need to worry about this at the moment. Go to the actual generated code in the chat output. Click in that output area and paste the code into a new file via clicking on the "..." and then the *Insert into new file* menu option.
 
-![Add code to new file](./images/cdd124.png?raw=true "Add code to new file")
+![Add code to new file](./images/cdd190.png?raw=true "Add code to new file")
 
 
 10. Suppose we change our mind and want to convert this code to Go. Click in the new file, and highlight the new code. Then, in the Chat interface tell it to translate to Go. Then, look in the separate chat output and you should see the equivalent Go code available.
@@ -459,7 +463,11 @@ translate to Go
 ```
 ![Go translation](./images/cdd125.png?raw=true "Go translation")
 
+11. Optional - try changing the model in the chat interface to *Claude 3.5 Sonnet (Preview)* and ask the "latest version" question again with that model. (Don't forget to change it back if you want afterwards.)
 
+```
+what is the latest Kubernetes version?
+```
 
 <p align="center">
 **[END OF LAB]**

@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 5.2 - 11/04/24
+## Revision 6.0 - 12/18/24
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -18,6 +18,8 @@
    ```
    code index.js
    ```
+   
+![Creating file from terminal](./images/cdd173.png?raw=true "Creating file from terminal")
 
 2. Afterwards this file should be open in a tab in the editor.
 
@@ -28,7 +30,7 @@
 ```
 4. Hit return and notice the code that Copilot suggested. This is likely more generic than we want, but hit tab to select that line. (Note that you should give Copilot a second to provide code suggestions before moving on to the next line.)
    
-5. After hitting tab, Copilot will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function (or Copilot stops generating additional code suggestions). One example of what code may look like is below.
+5. After hitting tab, Copilot will generate another part of the function. (If not, you may need to hit return.) Hit tab to accept it. Continue until you get a complete function (or Copilot stops generating additional code suggestions). One example of what code may look like is below. (This likely won't be the same as yours.)
 
 ![Copilot generated function](./images/cdd2.png?raw=true "Copilot generated function")
    
@@ -88,7 +90,7 @@ function splitURLandReturnComponents
 code prime.py
 ```
 
-2. Start typing a function definition as below
+2. In the new editor tab for the file, start typing a function definition as below
 ```
 def is_prime(n):
 ```
@@ -104,14 +106,14 @@ def is_prime(n):
 
 6. Highlight the code and select the Chat extension icon to open the chat window.  Tell Copilot to simplify the code by typing in the chat window.
 ```
-/simplify
+simplify
 ```
 
-![simplifying via chat box](./images/cdd164.png?raw=true "simplifying via chat box") 
+![simplifying via chat box](./images/cdd174.png?raw=true "simplifying via chat box") 
 
 7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. Accept any changes.
 
-![replace from chat suggestion](./images/cdd143.png?raw=true "replace from chat suggestion")    
+![replace from chat suggestion](./images/cdd175.png?raw=true "replace from chat suggestion")    
 
 8. Now, let's introduce an error into the code to see how Copilot can fix it. Pick an instance of a variable name and change it to one that doesn't exist. For example, change an instance of "n" to "x". 
 
@@ -123,9 +125,9 @@ def is_prime(n):
 
 10. Go ahead and click on the "Fix using Copilot" option.
 
-11. After a few moments, it should propose a fix that you can just accept (via the Accept button). You can also click on the *Show Changes* icon to see before/after for the proposed changes. (If it doesn't propose a fix in the dialog, you can skip to step 12 and use the /fix command in chat instead.)
+11. After a few moments, it should propose a fix that you can just accept (via the *Accept* button). You can also click on the *Show Changes* icon to see before/after for the proposed changes. (If it doesn't propose a fix in the dialog, you can skip to step 12 and use the /fix command in chat instead.)
 
-![Fixing with Copilot](./images/cdd166.png?raw=true "Fixing with Copilot")       
+![Fixing with Copilot](./images/cdd176.png?raw=true "Fixing with Copilot")       
 
 12. (Optional) If you'd like, you can go back and make the error again, highlight the code, and then use the /fix command in the chat window to get the same results.
 

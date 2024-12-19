@@ -246,6 +246,16 @@ def test_is_prime():
 
 ![Saving file](./images/cdd181.png?raw=true "saving file") 
 
+13. We can also ask Copilot for other cases to test. Select the code in the testing file you just saved and, in the chat interface, prompt Copilot with
+
+```
+What other conditions should I test?
+```
+
+14. Copilot should respond with a list of other conditions to test and example code that you can add if you want.
+
+![Additional conditions to test](./images/cdd186.png?raw=true "additional conditions to test") 
+
 <p align="center">
 **[END OF LAB]**
 </p>

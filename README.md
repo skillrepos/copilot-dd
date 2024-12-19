@@ -5,7 +5,7 @@ If you prefer and if you know one of the other IDEs supported by Copilot, you ca
 
 These steps **must** be completed prior to starting the actual labs.
 
-## 1. Ensure that you are signed up for Copilot access. 
+## 1. To be able to use all features, ensure that you are signed up for Copilot access. (If you prefer, you can use the new free Copilot access but some features will be missing. If you want to use the free version of Copilot, you can skip this step.)
 
 If not, when signed into GitHub, click on your profile picture/icon in the upper right and either select [Copilot](https://github.com/github-copilot/signup) 
 

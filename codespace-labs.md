@@ -151,13 +151,13 @@ simplify
 ```
 
 ![Output of interactively telling Copilot to explain code in dialog](./images/cdd144.png?raw=true "Output of interactively telling Copilot to explain code in dialog")
-![Output of interactively telling Copilot to explain code](./images/cdd41b.png?raw=true "Output of interactively telling Copilot to explain code")
+![Output of interactively telling Copilot to explain code](./images/cdd177.png?raw=true "Output of interactively telling Copilot to explain code")
 
-3. Now, let's do the same request but through a comment. In the *prime.py* file, below the code, enter the following comment and hit Enter.
+3. Now, let's do the same request but through a comment. In the *prime.py* file, below the code, on a new line, enter the following comment and hit Enter.
 ```
 # explain the code above line-by-line
 ```
-4. After this, Copilot should start showing the explanation in comments. Just hit tab to accept each line and then Enter to move to the next one.
+4. After this, Copilot should start showing the explanation in comments. Just hit tab to accept each line and then Enter to move to the next one until done. (Note that it might start repeating if you continue after it is done explaining the function the first time.)
 
 ![Output of telling Copilot to explain code via comment](./images/cdd42b.png?raw=true "Output of telling Copilot to explain code via comment")
 

@@ -8,10 +8,12 @@
 **Follow the startup instructions in the README.md file IF NOT ALREADY DONE!**
 
 **NOTES:**
-a. Chrome may work better than Firefox for some tasks.
-b. To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
-c. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
-d. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
+1. Chrome may work better than Firefox for some tasks.
+2. To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
+3. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
+4. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
+</br></br></br>
+   
 
 **Lab 1 - Learning how to create good prompts for Copilot**
 
@@ -85,6 +87,7 @@ function splitURLandReturnComponents
  <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 2 - Using Copilot to simplify code**
 
@@ -138,6 +141,7 @@ simplify
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 3 - Using Copilot after the coding**
 
@@ -187,6 +191,7 @@ simplify
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 4 - Using Copilot to generate tests**
 
@@ -263,6 +268,7 @@ What other conditions should I test?
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 5 - Using Copilot to help with SQL**
 
@@ -355,6 +361,7 @@ select * from courses.registrations where year(registration_date) = 2023 and mon
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 6 - Teaching Copilot about updates**
 
@@ -405,6 +412,7 @@ write a function to seed a random number generator
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 **Lab 7 - YAML generation, API use, translating code and the 2023 problem**
 
@@ -476,6 +484,7 @@ what is the latest Kubernetes version?
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
     
 
 **Lab 8 - Chat Participants**
@@ -524,6 +533,7 @@ Which files are using SQL?
 <p align="center">
 **[END OF LAB]**
 </p>
+</br></br></br>
 
 
 **Lab 9 - Copilot in GitHub**
@@ -595,6 +605,7 @@ We're not going to go through and resolve the pull request, so you are done!
 <p align="center">
 **THANKS!**
 </p>
+</br></br></br>
  
 # Appendix 1
 ## Alternate ways to "fork" repo if not allowed to use actual *Fork* button.

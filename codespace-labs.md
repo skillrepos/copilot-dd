@@ -629,3 +629,37 @@ The visibility field should be set to "Public".
 repo will be available. (There is a link in the complete message to click on to directly access it.)
 
 ![processing finished](./images/cdd197.png?raw=true "Processing finished")
+
+
+**Option 2 - Using clone and push**
+
+1. Sign into GitHub if not already signed in.
+
+2. If you don't already have one, create a GitHub token or SSH key. If you are familiar with SSH keys, you can add your public key at
+[**https://github.com/settings/keys**](https://github.com/settings/keys). Otherwise, you can just create a "classic" token by following the
+instructions at [**https://docs.github.com/en/authentication/keeping-your-account-and-datasecure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic**](https://docs.github.com/en/authentication/keeping-your-account-and-datasecure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). If you use a GitHub token, make sure to save a copy of it to use in the push step.
+
+3. Clone down the [**skillrepos/greetings-ci**](https://github.com/skillrepos/greetings-ci) repository.
+
+```
+git clone https://github.com/skillrepos/greetings-ci (if using token)
+```
+
+or 
+
+```
+git clone git@github.com:skillrepos/greetings-ci (if using ssh)
+```
+4. Create a new repository in your GitHub space named *sec-demo*. Go to [**https://github.com/new**](https://github.com/new). Fill in
+the "repo name" field with "sec-demo" and then click on the "Create repository" button.
+   
+![create new repo](./images/cdd198.png?raw=true "Create new repo")
+
+
+5. On the page that comes up after that, select the appropriate protocol (https or ssh) and then follow
+the instructions for "...or push an existing repository from the command line" to push your content
+back to the GitHub repository. If you're using https you will be prompted for a password at push
+time. Just paste in the classic token. (Note that for security reasons, you will not see the token
+displayed.)
+
+![push to repo](./images/cdd199.png?raw=true "Push to repo")

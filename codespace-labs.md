@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 6.0 - 12/18/24
+## Revision 6.2 - 12/19/24
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -590,4 +590,42 @@ We're not going to go through and resolve the pull request, so you are done!
 **THANKS!**
 </p>
  
+# Appendix 1
+## Alternate ways to "fork" repo if not allowed to use actual *Fork* button.
 
+**Option 1 - Using Import**
+
+1. Sign into GitHub if not already signed in.
+   
+2. Go to [**https://github.com/new/import**](https://github.com/new/import)
+   
+3. On that page, fill out the form as follows:
+   
+In "Your source repository details", in the "The URL for your source repository *" field, enter
+
+```
+https://github.com/skillrepos/sec-demo
+```
+
+Under "Your new repository details", make sure your userid shows up in the "Owner *" field and enter
+
+```
+sec-demo
+```
+
+in the "Repository name *" field.
+
+The visibility field should be set to "Public".
+
+![filling out form](./images/cdd195.png?raw=true "Filling out form")
+
+4. If you haven't already, click on the green "Begin import" button.
+
+5. After this, you should see the import processing... 
+
+![import processing](./images/cdd196.png?raw=true "Import processing")
+
+6. This will take several minutes to run. When done, you should see a "complete" message and your new
+repo will be available. (There is a link in the complete message to click on to directly access it.)
+
+![processing finished](./images/cdd197.png?raw=true "Processing finished")

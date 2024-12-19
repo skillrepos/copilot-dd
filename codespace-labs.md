@@ -506,7 +506,7 @@ Which files are using SQL?
 
 7. After executing this, you'll likely have some suggested information on how to search for files that use SQL in your project with search functionality for Visual Studio Code.
    
-![initial query response](./images/cdd138.png?raw=true "initial query response")   
+![initial query response](./images/cdd191.png?raw=true "initial query response")   
 
 8. This is not the kind of answer we were looking for. Let's repeat the query with the *@workspace* chat participant.
 ```
@@ -515,7 +515,7 @@ Which files are using SQL?
 
 9. After executing this, you should see Copilot assessing all of the files in the workspace and then returning a more specific and expected answer.
     
-![more specific response](./images/cdd139.png?raw=true "more specific response")
+![more specific response](./images/cdd192.png?raw=true "more specific response")
 
 <p align="center">
 **[END OF LAB]**

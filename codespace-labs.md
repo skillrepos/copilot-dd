@@ -555,7 +555,7 @@ Generate a url that I can use to create a pull request to merge the dev branch i
 
  ![collapse chat](./images/cdd193.png?raw=true "Collapse chat")  
   
-7. In the pull request, update the title if you want. Then, we'll have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary.
+7. In the pull request, update the title if you want. If you have one of the trial or paid plans, you can have Copilot automatically generate a description of our pull request. To do this, click on the *Copilot actions* button in the row under the *Add a description*. In the pop-up, select *Summary*. This will run for a few moments and then generate a draft summmary. (If you are on the free plan, you won't see the Copilot icon in the pull request area. If that's the case, you can just create the pull request, open up the *Files changed* tab, pick a change and go to step 10.)
 
  ![generate summary](./images/cdd155.png?raw=true "Generate summary")  
  ![summary](./images/cdd156.png?raw=true "Summary")  

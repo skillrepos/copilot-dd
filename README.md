@@ -3,6 +3,15 @@
 These instructions will guide you through configuring a GitHub Codespaces environment that you can use to run the course labs. 
 If you prefer and if you know one of the other IDEs supported by Copilot, you can use that. But the instructions will reference the codespace version.
 
+**NOTES:**
+1. We will be working in the public GitHub.com, not a private instance.
+2. Chrome may work better than Firefox for some tasks.
+3. The default environment will be a GitHub Codespace (with Copilot already installed). If you prefer to use your own IDE, you are responsible for installing Copilot in it. Some things in the lab may be different if you use your own environment.
+4. To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.**
+5. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
+6. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
+</br></br></br>
+
 These steps **must** be completed prior to starting the actual labs.
 
 ## 1. To be able to use all features, ensure that you are signed up for Copilot access. (If you prefer, you can use the new free Copilot access but some features will be missing. If you want to use the free version of Copilot, you can skip this step.)

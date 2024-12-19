@@ -9,12 +9,12 @@ If you prefer and if you know one of the other IDEs supported by Copilot, you ca
 3. The default environment will be a GitHub Codespace (with Copilot already installed). If you prefer to use your own IDE, you are responsible for installing Copilot in it. Some things in the lab may be different if you use your own environment.
 4. To copy and paste in the codespace, you may need to use keyboard commands - CTRL-C and CTRL-V.
 5. VPNs may interfere with the ability to run the codespace. It is recommended to not use a VPN if you run into problems.
-6. If you use the new free Copilot plan (no signup), some advanced functionality may not be available.
+6. If you use the new free Copilot plan (no signup), some advanced functionality may not be available. Pro version is free trial for 30 days.
 </br></br></br>
 
 These steps **must** be completed prior to starting the actual labs.
 
-## 1. To be able to use all features, ensure that you are signed up for Copilot access. (If you prefer, you can use the new free Copilot access but some features will be missing. If you want to use the free version of Copilot, you can skip this step.)
+## 1. To be able to use all features, sign up for Pro trial - if you don't have access already. (If you prefer, you can use the new free version but some features will be missing. If you want to use the free version of Copilot, you can skip this step.)
 
 If not, when signed into GitHub, click on your profile picture/icon in the upper right and either select [Copilot](https://github.com/github-copilot/signup) 
 

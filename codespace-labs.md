@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 6.2 - 12/19/24
+## Revision 6.3 - 02/01/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -230,7 +230,7 @@ def test_is_prime():
 
 ![testing explanation](./images/cdd179.png?raw=true "testing explanation") 
 
-7. Let's see what the shortcut command would do. In the main chat interface, enter "/tests" and then Enter. Copilot will want to add the *@workspace* agent onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
+7. Let's see what the shortcut command would do. In the main chat interface, enter "/tests" and then Enter. Copilot will want to add the *@workspace* chat participant onto the command. Just remove the *@workspace* from the beginning of the command. **Do not hit enter yet**.
 ```
 /tests
 ```

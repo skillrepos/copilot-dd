@@ -14,15 +14,12 @@ If you prefer and if you know one of the other IDEs supported by Copilot, you ca
 
 These steps **must** be completed prior to starting the actual labs.
 
-## 1. To be able to use all features, sign up for Pro trial - if you don't have access already. (If you prefer, you can use the new free version but some features will be missing. If you want to use the free version of Copilot, you can skip this step.)
+## 1. When logged into GitHub, you have Copilot Free version. This will let you do almost everything in the class. (If you prefer, you can sign up for the Pro version trial to be able to do all steps, but that is not required.)
 
-If not, when signed into GitHub, click on your profile picture/icon in the upper right and either select [Copilot](https://github.com/github-copilot/signup) 
+Only if you want to sign up for the Pro trial, click on your profile picture/icon in the upper right and select [Your Copilot](https://github.com/github-copilot/signup), **OR** select [Settings->Copilot](https://github.com/settings/copilot). Then click on *Start a free trial*. 
 
-![Signing up for Copilot](./images/cdd70.png?raw=true "Signing up for Copilot")
-
-**OR** select [Settings->Copilot](https://github.com/settings/copilot) and sign up.
-
-![Signing up for Copilot](./images/cdd32.png?raw=true "Signing up for Copilot")
+![Signing up for Copilot](./images/cdd201.png?raw=true "Signing up for Copilot")
+![Signing up for Copilot](./images/cdd202.png?raw=true "Signing up for Copilot")
 
 You can also find help there for using Copilot in other supported IDEs, set the switch for whether or not to allow matching public code suggestions, etc.
 

@@ -220,9 +220,12 @@ def test_is_prime():
 5. Now, switch to the chat interface and ask Copilot using the following prompt:
 
 ```
-#selection How do I test this code?
+#selection How do I test this code with separate test cases?
 ```
-![prompting on how to test](./images/cdd178.png?raw=true "prompting on how to test") 
+
+(After you type the "#selection" part, you can also just use the arrow key and Enter to select "selection" from the popup.)
+
+![prompting on how to test](./images/cdd203.png?raw=true "prompting on how to test") 
 
 (If you happen to encounter a dialog about confirming your testing environment, just hit *Accept* and run the query again.)
 

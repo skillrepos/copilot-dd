@@ -1,7 +1,7 @@
 # Copilot Deep Dive
 ## An introduction to GitHub Copilot
 ## Session labs for codespace only
-## Revision 6.3 - 02/01/25
+## Revision 6.4 - 03/08/25
 
 **Versions of dialogs, buttons, etc. shown in screenshots may differ from current version of Copilot**
 
@@ -113,14 +113,14 @@ def is_prime(n):
 
 ![alternative suggestions](./images/cdd34b.png?raw=true "alternative suggestions") 
 
-6. Highlight the code and select the Chat extension icon to open the chat window.  Tell Copilot to simplify the code by typing in the chat window.
+6. Highlight the code and switch to the chat panel on the right.  Tell Copilot to simplify the code by typing in the chat window.
 ```
 simplify
 ```
 
 ![simplifying via chat box](./images/cdd174.png?raw=true "simplifying via chat box") 
 
-7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. Accept any changes.
+7. Hover over the simplified text and tell Copilot to insert the suggestion at the cursor to replace the text that's currently there. (Use the second icon in the list when you hover to *Insert at cursor*. This should replace the highlighted text.)
 
 ![replace from chat suggestion](./images/cdd175.png?raw=true "replace from chat suggestion")    
 
@@ -128,7 +128,7 @@ simplify
 
 ![introduce error](./images/cdd37b.png?raw=true "introduce error")   
 
-9. Notice the light bulb icon that has popped up. Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot.
+9. Notice the light bulb icon that has popped up. Click on that, scroll to the bottom (if needed), and you'll have additional options to fix or explain with Copilot. (If you don't see the lightbulb or the menu doesn't show up, highlight the error, then right-click and go to the *Copilot* entry in the menu.)
 
 ![Copilot options inline](./images/cdd165.png?raw=true "Copilot options inline")   
 

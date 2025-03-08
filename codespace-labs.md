@@ -352,10 +352,10 @@ use instructor_id as the input parameter
 select * from courses.registrations where year(registration_date) = 2023 and month(registration_date) = 9;
 ```
 
-13. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), and in a chat interface enter "/optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
+13. Ask Copilot to optimize the previous query. You can do this via highlighting the query (make sure to highlight the *entire* query), bring up the inline chat dialog, then enter "optimize" in the dialog. You can Accept or Discard the suggested optimization after that.
 
 ```
-/optimize
+optimize
 ```
 ![Optimizing a query](./images/cdd184.png?raw=true "Optimizing a query") 
 
